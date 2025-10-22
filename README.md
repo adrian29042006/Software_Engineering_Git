@@ -1,32 +1,22 @@
-# 🧊 Software Engineering – Temperatursensor für ein Induktionskochfeld
+# 🔥 Software Engineering – Temperatursensor für ein Induktionskochfeld
 
-> 💡 **Übung:** Erstellung von **Lastenheft** und **Pflichtenheft** im Rahmen der Lehrveranstaltung *Software Engineering*.
-
----
-
-## 📘 Projektbeschreibung
-
-Dieses Projekt behandelt die Entwicklung und Spezifikation eines **Temperatursensors für ein Induktionskochfeld**.  
-Ziel ist es, den Prozess von der **Anforderungsanalyse (Lastenheft)** bis zur **technischen Umsetzung (Pflichtenheft)** zu dokumentieren und zu verstehen.
-
-📄 **Projektdatei:**  
-👉 [Temperatursensor Induktionskochfeld (PDF)](https://github.com/adrian29042006/Software_Engineering_Git/blob/main/Temperatursensor%20Induktionskochfeld.pdf)
+> Übung zu **Lasten- und Pflichtenheft**
 
 ---
 
-## ⚙️ Inhalte des Repositories
+## 📄 Dokumente
 
-| Datei | Beschreibung |
-|-------|---------------|
-| `Temperatursensor Induktionskochfeld.pdf` | Enthält das vollständige Lasten- und Pflichtenheft |
-| `README.md` | Diese Projektbeschreibung |
----
-
-## 🎯 Lernziele
-
-- Erstellung eines **Lastenhefts**: Definition von Anforderungen aus Kundensicht  
-- Erstellung eines **Pflichtenhefts**: Umsetzung der Anforderungen aus Entwicklersicht  
-- Verständnis von **Software-Engineering-Prozessen**  
-- Anwendung von **strukturierter Dokumentation**
+- [📘 Lastenheft](./Lastenheft_Temperatursensor.md)  
+- [🛠️ Pflichtenheft](./Pflichtenheft_Temperatursensor.md)
 
 ---
+
+## 📚 Beschreibung
+
+Dieses Projekt behandelt die Entwicklung eines **Temperatursensors für ein Induktionskochfeld**.  
+Ziel ist es, Anforderungen (Lastenheft) und technische Umsetzung (Pflichtenheft) klar zu trennen und zu dokumentieren.
+
+**Erstellt von:** Adrian  
+**Fach:** Software Engineering  
+**Jahr:** 2025
+
