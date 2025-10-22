@@ -20,9 +20,6 @@ Ziel ist es, den Prozess von der **Anforderungsanalyse (Lastenheft)** bis zur **
 |-------|---------------|
 | `Temperatursensor Induktionskochfeld.pdf` | Enthält das vollständige Lasten- und Pflichtenheft |
 | `README.md` | Diese Projektbeschreibung |
-| *(optional)* `requirements.txt` | Anforderungen, falls Software simuliert wird |
-| *(optional)* `src/` | Beispielcode oder Simulationen |
-
 ---
 
 ## 🎯 Lernziele
