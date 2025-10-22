@@ -9,12 +9,6 @@
 Das System soll dem Benutzer eine Anzeige darstellen, damit der Benutzer genau weiß, welche Temperatur das Induktionskochfeld hat.  
 Es muss **9 klar unterschiedliche Leistungsstufen** bieten.
 
-### Anforderungen
-- 9 klar unterscheidbare Leistungsstufen  
-- Auswahl über Touchfeld, Drehknopf oder Tasten  
-- Reaktionszeit soll **sehr schnell** sein (unter 100 ms)  
-- Zuverlässige Bedienung auch bei leicht verschmutzten Fingern  
-- LED-Anzeige mit Lebensdauer von mindestens 500 h  
 
 ---
 
