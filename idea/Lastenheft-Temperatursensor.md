@@ -7,7 +7,7 @@
 ## 1. Digitale Leistungsstufen
 
 Das System soll dem Benutzer eine Anzeige darstellen, damit der Benutzer genau weiß, welche Temperatur das Induktionskochfeld hat.  
-Es muss **9 klar unterschiedliche Leistungsstufen** bieten.
+Das Induktionskochfeld muss **9 klar unterschiedliche Leistungsstufen** bieten.
 
 
 ---
