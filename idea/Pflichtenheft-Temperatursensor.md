@@ -6,7 +6,7 @@
 
 ## 1. Digitale Leistungsstufen
 
-Das System muss innerhalb von **Millisekunden** reagieren.  
+Das System reagiert innerhalb von **Millisekunden** reagieren.  
 Die Leistungsstufeneinstellung erfolgt über eine digitale Anzeige, **Drehknopf** oder **Tastenfeld**.
 
 | Nr. | Typ | Beschreibung |
@@ -21,7 +21,7 @@ Die Leistungsstufeneinstellung erfolgt über eine digitale Anzeige, **Drehknopf*
 
 ## 2. Power-Boost-Funktion
 
-Das System muss über eine **Taste „P“** verfügen, die für „Power“ steht.  
+Das System bietet eine **Taste „P“** zur verfügung, die für „Power“ steht.  
 Diese aktiviert eine doppelte Leistung für 10 Minuten und deaktiviert sich danach automatisch.  
 Ein erneutes Drücken während der Aktivierungsphase deaktiviert die Funktion.
 
