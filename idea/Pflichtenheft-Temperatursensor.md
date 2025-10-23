@@ -6,7 +6,7 @@
 
 ## 1. Digitale Leistungsstufen
 
-Das System reagiert innerhalb von **Millisekunden** reagieren.  
+Das System soll innerhalb von **Millisekunden** reagieren.  
 Die Leistungsstufeneinstellung erfolgt über eine digitale Anzeige, **Drehknopf** oder **Tastenfeld**.
 
 | Nr. | Typ | Beschreibung |
