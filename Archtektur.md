@@ -1,6 +1,6 @@
 # Anforderungen Temperatursensor Induktionskochfeld
 
-## 1. Leistungsregelung
+## Hier Nochmal eine kleine übersicht von den Requirements
 
 | Nr.   | Typ             | Beschreibung |
 |------|-----------------|--------------|
@@ -9,47 +9,24 @@
 | R1.3 | Nicht-Funktional | Reaktionszeit ≤ 100 ms |
 | R1.4 | Nicht-Funktional | Zuverlässige Funktion auch bei verschmutzten Fingern |
 | R1.5 | Nicht-Funktional | Lebensdauer der LED-Anzeige ≥ 500 h |
-
-## 2. Power-Boost-Funktion
-
-Taste „P“ aktiviert doppelte Leistung für 10 Minuten und deaktiviert sich automatisch.  
-Erneutes Drücken während Aktivierung deaktiviert die Funktion.
-
-| Nr.   | Typ             | Beschreibung |
 |------|-----------------|--------------|
 | R2.1 | Funktional      | Taste „P“ muss klar erkennbar sein |
 | R2.2 | Nicht-Funktional | Zustand der Taste (Ein/Aus) muss sichtbar sein |
 | R2.3 | Nicht-Funktional | Reaktionszeit beim Betätigen ≤ 500 ms |
 | R2.4 | Nicht-Funktional | Taste „P“ muss sich in Form oder Farbe von anderen unterscheiden |
 | R2.5 | Funktional |Die Funktion muss 10 Minuten lang laufen und sich selbst deaktivieren. |
-
-## 3. Bratsensor-Automatik
-
-Temperatursensor überwacht kontinuierlich die Pfannenbodentemperatur und sendet Daten an Mikrocontroller.
-
-| Nr.   | Typ             | Beschreibung |
 |------|-----------------|--------------|
 | R3.1 | Funktional      | Temperatur in der Pfanne wird kontinuierlich überwacht |
 | R3.2 | Nicht-Funktional | Anzeigeverzögerung ≤ 500 ms |
-
-## 4. Ein-/Aus-Schalter
-
-| Nr.   | Typ             | Beschreibung |
 |------|-----------------|--------------|
 | R4.1 | Funktional      | Gerät verfügt über einen Ein-/Aus-Schalter |
 | R4.2 | Nicht-Funktional | Schalter hält ≥ 100 000 Betätigungen ohne Defekt |
-
-## 5. Timer
-
-Timer wird über Tasten, Drehknopf oder Touchfeld eingestellt.  
-Bei Ablauf erfolgt automatische Abschaltung der Kochzone.
-
-| Nr.   | Typ             | Beschreibung |
 |------|-----------------|--------------|
 | R5.1 | Funktional      | Einstellbare Kochzeit von 1–20 Minuten |
 | R5.2 | Nicht-Funktional | Timeranzeige reagiert mit max. 500 ms Verzögerung |
 | R5.3 | Funktional | Die Zeit wird heruntergezählt werden und die Kochzone wird daraufhin abschalten. |
 
+---
 
 ![Komponentendiagramm](https://github.com/adrian29042006/Software_Engineering_Git/blob/main/lib/Sensor%20(Hardware%20Block)%20NTC%20Widerstand%20ADC.pdf)
 
