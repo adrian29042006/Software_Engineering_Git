@@ -44,3 +44,20 @@ Verantwortlichkeiten der Komponenten:
 | Verarbeitung        | Logik-Block      | Verarbeitet Sensordaten, steuert Leistungsstufen, aktiviert/deaktiviert Power-Boost, Timer-Countdown, Sicherheitslogik |
 | Steuerung/Anzeige   | HMI-Block        | Ermöglicht Benutzereingaben (Touch/Tasten/Drehknopf), zeigt Leistungsstufen, Timer, Power-Boost-Status und Temperatur an    |
 
+# Service Interfaces Übersicht
+
+| Ziel (Service-Empfänger) | Quelle (Service-Anbieter) | Methode / Schnittstelle | Zweck und zugehörige Requirements |
+|-------------------------|--------------------------|------------------------|----------------------------------|
+| Verarbeitung | Sensor (Hardware) | `readInputLevel()` | Liefert die aktuell vom Touch/Drehknopf gewählte Stufe (R1.1) |
+| Verarbeitung | Sensor (Hardware) | `getTemperatureData()` | Liefert kontinuierlich kalibrierte Temperaturwerte (R3.1) |
+| Verarbeitung | Sensor (Hardware) | `checkButtonState(ButtonID)` | Liefert den Zustand einer Taste, z.B. P-Taste oder Ein/Aus (R2.3) |
+| Verarbeitung | Steuerung/Anzeige | `getUserSettings()` | Ruft Einstellungen wie die Timer-Dauer ab (R5.1) |
+| Steuerung/Anzeige | Verarbeitung | `getPowerLevel()` | Liefert die aktuelle Leistungsstufe oder Boost-Status (R1.2, R2.2) |
+| Steuerung/Anzeige | Verarbeitung | `getTimerRemaining()` | Liefert die verbleibende Countdown-Zeit (R5.2) |
+| Steuerung/Anzeige | Verarbeitung | `getFaultStatus()` | Liefert Fehler- oder Warnmeldungen (Sicherheitslogik) |
+| Verarbeitung | Steuerung/Anzeige | `activateBoost()` | Signalisiert den Start der Power-Boost-Funktion (Logik-Auslöser) |
+| Verarbeitung | Sensor (Hardware) | `setHeaterPower(int level)` | Gibt den Steuerbefehl an die Heizelemente weiter (R1.1, R2.5, R5.3) |
+| Verarbeitung | Verarbeitung | `updateTimerLogic()` | Periodischer Aufruf zur Verwaltung des Countdowns (R5.3) |
+| Verarbeitung | Verarbeitung | `checkBoostTimeout()` | Periodischer Aufruf zum Ablaufen der 10-Minuten-Boostzeit (R2.5) |
+
+
