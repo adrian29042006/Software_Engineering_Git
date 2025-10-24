@@ -31,6 +31,7 @@ Ein erneutes Drücken während der Aktivierungsphase deaktiviert die Funktion.
 | R2.2 | Nicht-Funktional | Zustand der Taste (Ein/Aus) muss sichtbar sein |
 | R2.3 | Nicht-Funktional | Reaktionszeit beim Betätigen ≤ 500 ms |
 | R2.4 | Nicht-Funktional | Taste „P“ muss sich in Form oder Farbe von anderen unterscheiden |
+| R2.5 | Funktional |Die Funktion muss 10 Minuten lang laufen und sich selbst deaktivieren. |
 
 ---
 
@@ -63,3 +64,4 @@ Der Mikrocontroller zählt die Zeit herunter und regelt bei Ablauf automatisch d
 |-----|-----|---------------|
 | R5.1 | Funktional | Einstellbare Kochzeit von 1–20 Minuten |
 | R5.2 | Nicht-Funktional | Timeranzeige reagiert mit max. 500 ms Verzögerung |
+| R5.3 | Funktional | Die Zeit wird heruntergezählt werden und die Kochzone wird daraufhin abschalten. |
