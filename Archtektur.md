@@ -58,8 +58,9 @@ Bei Ablauf erfolgt automatische Abschaltung der Kochzone.
 
 Verantwortlichkeiten der Komponenten:
 
-| **Komponente**      | Rolle                                                                                     | 
-|---------------------|-------------------------------------------------------------------------------------------|
-| Sensor(Hardware)    | Hardware-Block                                                                            | 
-| Verarbeitung        | Req. 1.1                                                                                  | 
-| Steuerung/Anzeige   | Req. 1.2, Req. 1.5 Req. 2.1 Req. 2.2 Req. 2.4 Req. 3.2 Req. 4.1, Req 5.1, Req. 5.2        |
+| **Komponente**      | Rolle            | Verantwortlichkeiten |
+|---------------------|------------------|---------------------|
+| Sensor (Hardware)   | Hardware-Block   | Misst die Pfannenbodentemperatur und liefert kontinuierlich Sensordaten an die Verarbeitung                                      |
+| Verarbeitung        | Logik-Block      | Verarbeitet Sensordaten, steuert Leistungsstufen, aktiviert/deaktiviert Power-Boost, Timer-Countdown, Sicherheitslogik |
+| Steuerung/Anzeige   | HMI-Block        | Ermöglicht Benutzereingaben (Touch/Tasten/Drehknopf), zeigt Leistungsstufen, Timer, Power-Boost-Status und Temperatur an    |
+
