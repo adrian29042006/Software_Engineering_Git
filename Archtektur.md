@@ -21,6 +21,7 @@ Erneutes Drücken während Aktivierung deaktiviert die Funktion.
 | R2.2 | Nicht-Funktional | Zustand der Taste (Ein/Aus) muss sichtbar sein |
 | R2.3 | Nicht-Funktional | Reaktionszeit beim Betätigen ≤ 500 ms |
 | R2.4 | Nicht-Funktional | Taste „P“ muss sich in Form oder Farbe von anderen unterscheiden |
+| R2.5 | Funktional |Die Funktion muss 10 Minuten lang laufen und sich selbst deaktivieren. |
 
 ## 3. Bratsensor-Automatik
 
@@ -47,13 +48,15 @@ Bei Ablauf erfolgt automatische Abschaltung der Kochzone.
 |------|-----------------|--------------|
 | R5.1 | Funktional      | Einstellbare Kochzeit von 1–20 Minuten |
 | R5.2 | Nicht-Funktional | Timeranzeige reagiert mit max. 500 ms Verzögerung |
+| R5.3 | Funktional | Die Zeit wird heruntergezählt werden und die Kochzone wird daraufhin abschalten. |
+
 
 ![Komponentendiagramm](https://github.com/adrian29042006/Software_Engineering_Git/blob/main/lib/Sensor%20(Hardware%20Block)%20NTC%20Widerstand%20ADC.pdf)
 
 | **Komponente**      | **Requirements**                                                                          | 
 |---------------------|-------------------------------------------------------------------------------------------|
 | Sensor(Hardware)    | Req. 1.3, Req. 1.4, Req. 2.3, Req. 2.5, Req. 3.1, Req. 4.2                                | 
-| Verarbeitung        | Req. 1.1                                                                                  | 
+| Verarbeitung        | Req. 1.1, Req. 2.5, Req. 5.3                                                              | 
 | Steuerung/Anzeige   | Req. 1.2, Req. 1.5 Req. 2.1 Req. 2.2 Req. 2.4 Req. 3.2 Req. 4.1, Req 5.1, Req. 5.2        |
 
 Verantwortlichkeiten der Komponenten:
