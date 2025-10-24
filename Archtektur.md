@@ -1,4 +1,4 @@
-# Anforderungen Kochzonen-Steuerungssystem
+# Anforderungen Temperatursensor Induktionskochfeld
 
 ## 1. Leistungsregelung
 
