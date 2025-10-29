@@ -44,20 +44,26 @@ Verantwortlichkeiten der Komponenten:
 | Verarbeitung        | Logik-Block      | Verarbeitet Sensordaten, steuert Leistungsstufen, aktiviert/deaktiviert Power-Boost, Timer-Countdown, Sicherheitslogik |
 | Steuerung/Anzeige   | HMI-Block        | Ermöglicht Benutzereingaben (Touch/Tasten/Drehknopf), zeigt Leistungsstufen, Timer, Power-Boost-Status und Temperatur an    |
 
-# Service Interfaces Übersicht
 
-| Ziel (Service-Empfänger) | Quelle (Service-Anbieter) | Methode / Schnittstelle | Zweck und zugehörige Requirements |
-|-------------------------|--------------------------|------------------------|----------------------------------|
-| Verarbeitung | Sensor (Hardware) | `readInputLevel()` | Liefert die aktuell vom Touch/Drehknopf gewählte Stufe (R1.1) |
-| Verarbeitung | Sensor (Hardware) | `getTemperatureData()` | Liefert kontinuierlich kalibrierte Temperaturwerte (R3.1) |
-| Verarbeitung | Sensor (Hardware) | `checkButtonState(ButtonID)` | Liefert den Zustand einer Taste, z.B. P-Taste oder Ein/Aus (R2.3) |
-| Verarbeitung | Steuerung/Anzeige | `getUserSettings()` | Ruft Einstellungen wie die Timer-Dauer ab (R5.1) |
-| Steuerung/Anzeige | Verarbeitung | `getPowerLevel()` | Liefert die aktuelle Leistungsstufe oder Boost-Status (R1.2, R2.2) |
-| Steuerung/Anzeige | Verarbeitung | `getTimerRemaining()` | Liefert die verbleibende Countdown-Zeit (R5.2) |
-| Steuerung/Anzeige | Verarbeitung | `getFaultStatus()` | Liefert Fehler- oder Warnmeldungen (Sicherheitslogik) |
-| Verarbeitung | Steuerung/Anzeige | `activateBoost()` | Signalisiert den Start der Power-Boost-Funktion (Logik-Auslöser) |
-| Verarbeitung | Sensor (Hardware) | `setHeaterPower(int level)` | Gibt den Steuerbefehl an die Heizelemente weiter (R1.1, R2.5, R5.3) |
-| Verarbeitung | Verarbeitung | `updateTimerLogic()` | Periodischer Aufruf zur Verwaltung des Countdowns (R5.3) |
-| Verarbeitung | Verarbeitung | `checkBoostTimeout()` | Periodischer Aufruf zum Ablaufen der 10-Minuten-Boostzeit (R2.5) |
 
+Traceability Matrix
+| Requirement | Beschreibung | Komponente | Verantwortlichkeit |
+|-------------|--------------|------------|------------------|
+| R1.1 | 9 klar unterscheidbare Leistungsstufen | Verarbeitung | Leistungsstufen steuern, Heizleistung anpassen |
+| R1.2 | Auswahl der Leistungsstufen über Touch/Drehknopf/Tasten | Steuerung/Anzeige | Benutzeroberfläche, Eingaben erfassen |
+| R1.3 | Reaktionszeit ≤ 100 ms | Sensor (Hardware) | Sensordaten liefern |
+| R1.4 | Zuverlässige Funktion bei verschmutzten Fingern | Sensor (Hardware) | Sensordaten zuverlässig erfassen |
+| R1.5 | Lebensdauer der LED-Anzeige ≥ 500 h | Steuerung/Anzeige | Anzeige implementieren |
+| R2.1 | Taste „P“ klar erkennbar | Steuerung/Anzeige | Darstellung und Layout der Taste |
+| R2.2 | Zustand der Taste sichtbar | Steuerung/Anzeige | Anzeige implementieren |
+| R2.3 | Reaktionszeit beim Betätigen ≤ 500 ms | Sensor (Hardware) | Tastenzustand erfassen |
+| R2.4 | Taste „P“ unterscheidbar | Steuerung/Anzeige | Anzeige implementieren |
+| R2.5 | Funktion 10 Min laufen & selbst deaktivieren | Sensor / Verarbeitung | Sensordaten + Logik steuern Power-Boost |
+| R3.1 | Temperatur kontinuierlich überwacht | Sensor (Hardware) | Temperaturdaten liefern |
+| R3.2 | Anzeigeverzögerung ≤ 500 ms | Steuerung/Anzeige | Anzeige aktualisieren |
+| R4.1 | Gerät verfügt über Ein-/Aus-Schalter | Steuerung/Anzeige | Schalter darstellen / Eingabe erfassen |
+| R4.2 | Schalter ≥ 100.000 Betätigungen | Sensor (Hardware) | Hardware Schalter robust |
+| R5.1 | Einstellbare Kochzeit 1–20 min | Steuerung/Anzeige | Benutzeroberfläche für Timer |
+| R5.2 | Timeranzeige Verzögerung ≤ 500 ms | Steuerung/Anzeige | Countdown korrekt anzeigen |
+| R5.3 | Zeit herunterzählen, Kochzone abschalten | Verarbeitung | Timerlogik steuern, Heizelement abschalten |
 
