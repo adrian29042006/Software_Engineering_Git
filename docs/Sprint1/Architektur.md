@@ -1,9 +1,9 @@
-## Zustandsdiagramm:
+## Komponentendiagramm:
 <img width="1270" height="714" alt="User" src="https://github.com/user-attachments/assets/6cd9abb8-b4d9-4a46-8df0-abaf0471fc04" />
 
 ---
 
-## Komponentendiagramm
+## Komponentendiagramm zugeordnete Requierements
 
 | Komponente | Zugeordnete Requirements |
 |------------|-------------------------|
@@ -14,7 +14,30 @@
 | Aktuatoren | R1.1, R2.5, R4.1, R5.1, R5.3, R4.2 |
 
 ---
+## Verantwortlichkeit der Komponenten
 
-- [★ Traceability Matrix – Induktionskochfeld](traceability_matrix.md)
+**User Interface (UI)**
+- Eingaben an Steuerung/Logik
+- Anzeigen von Statusinfos von Steuerung, Sensorik und Sicherheitsmodul
+
+**Steuerung / Logik**
+- Empfängt Eingaben von UI
+- Steuert Aktuatoren (Leistungsstufen, Boost, Timer)
+- Liest Sensorik-Daten (Temperatur)
+- Überwacht Sicherheitsmodul
+
+**Sensorik**
+- Liefert Temperatur- und Statusdaten an Steuerung/Logik
+
+**Sicherheitsmodul**
+- Überwacht Induktionsfeld, Strom, Temperatur
+- Sendet Warnungen / Abschaltungen an Steuerung/Logik
+
+**Aktuatoren**
+- Setzen Steuerbefehle der Logik um (Heizung, LEDs, Summer)
+
+---
+
+ [★ Traceability Matrix – Induktionskochfeld](traceability_matrix.md)
 
 
