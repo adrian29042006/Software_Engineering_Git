@@ -1,4 +1,4 @@
-![Komponentendiagramm](https://github.com/adrian29042006/Software_Engineering_Git/blob/main/lib/Sensor%20(Hardware%20Block)%20NTC%20Widerstand%20ADC.pdf)
+![User](https://github.com/user-attachments/assets/d6baf356-565e-49ad-9105-3b44d5972f9e)
 
 | **Komponente**      | **Requirements**                                                                          | 
 |---------------------|-------------------------------------------------------------------------------------------|
