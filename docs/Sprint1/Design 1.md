@@ -25,7 +25,7 @@ Umfang:
 | **R3.1** | Temperatur in Pfanne wird kontinuierlich überwacht | `TempSensorReader`, `PowerController` | Unit-Test: Sensorwerte plausibel |
 | **R4.1** | Gerät verfügt über Ein-/Aus-Schalter | `UIHandler`, `PowerController` | Integrationstest: Ein/Aus-Zyklus |
 | **R2.2** | Zustand der Taste sichtbar (Ein/Aus) | `UIHandler` | Sichtprüfung: LED/Display-Feedback |
-| **R2.3** | Reaktionszeit beim Betätigen ≤ 500 ms | `UIHandler` | Reaktionszeitmessung mit Stopwatch |
+| **R2.3** | Reaktionszeit beim Betätigen ≤ 500 ms | `UIHandler`, `PowerController` | Reaktionszeitmessung |
 
 ---
 
