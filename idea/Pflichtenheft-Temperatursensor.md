@@ -1,67 +1,49 @@
 # 🛠️ Pflichtenheft – Temperatursensor für ein Induktionskochfeld
 
-> Ziel: Technische Umsetzung der Anforderungen aus dem Lastenheft
 
 ---
 
 ## 1. Digitale Leistungsstufen
 
-Das System soll innerhalb von **Millisekunden** reagieren.  
-Die Leistungsstufeneinstellung erfolgt über eine digitale Anzeige, **Drehknopf** oder **Tastenfeld**.
+Implementierung von 9 Leistungsstufen, steuerbar über Drehregler oder LED-Touch-Display.
+Jede Stufe entspricht einer festgelegten Heizleistung in Watt.
+LED-Anzeige zeigt die aktuelle Leistungsstufe.
+Mikrocontroller liest die Eingabe vom Drehregler/Touch-Display und steuert die Leistungsmodulation über das Induktionsfeld.
 
-| Nr. | Typ | Beschreibung |
-|-----|-----|---------------|
-| R1.1 | Funktional | 9 klar unterscheidbare Leistungsstufen |
-| R1.2 | Funktional | Auswahl der Leistungsstufen über Touch, Drehknopf oder Tasten |
-| R1.3 | Nicht-Funktional | Reaktionszeit ≤ 100 ms |
-| R1.4 | Nicht-Funktional | Zuverlässige Funktion auch bei verschmutzten Fingern |
-| R1.5 | Nicht-Funktional | Lebensdauer der LED-Anzeige ≥ 500 h |
 
 ---
 
 ## 2. Power-Boost-Funktion
 
-Das System bietet eine **Taste „P“** zur verfügung, die für „Power“ steht.  
-Diese aktiviert eine doppelte Leistung für 10 Minuten und deaktiviert sich danach automatisch.  
-Ein erneutes Drücken während der Aktivierungsphase deaktiviert die Funktion.
-
-| Nr. | Typ | Beschreibung |
-|-----|-----|---------------|
-| R2.1 | Funktional | Taste „P“ muss klar erkennbar sein |
-| R2.2 | Nicht-Funktional | Zustand der Taste (Ein/Aus) muss sichtbar sein |
-| R2.3 | Nicht-Funktional | Reaktionszeit beim Betätigen ≤ 500 ms |
-| R2.4 | Nicht-Funktional | Taste „P“ muss sich in Form oder Farbe von anderen unterscheiden |
-| R2.5 | Funktional |Die Funktion muss 10 Minuten lang laufen und sich selbst deaktivieren. |
+Taste „P“ aktiviert Boost.
+Mikrocontroller setzt Boost-Leistung für 10 Minuten.
+Nach Ablauf automatisch Rückkehr auf Stufe 9.
+Bei erneutem Betätigen während Boost: sofortige Deaktivierung.
+LED-Taste „P“ zeigt Boost-Aktiv oder Boost-Inaktiv an.
 
 ---
 
 ## 3. Bratsensor-Automatik
 
-Ein **Temperatursensor** misst kontinuierlich die Pfannenbodentemperatur und übermittelt die Daten an den Mikrocontroller.
-
-| Nr. | Typ | Beschreibung |
-|-----|-----|---------------|
-| R3.1 | Funktional | Temperatur in der Pfanne wird kontinuierlich überwacht |
-| R3.2 | Nicht-Funktional | Anzeigeverzögerung ≤ 500 ms |
+Temperaturfühler im Kochfeld (z. B. Infrarot- oder Thermoelement) misst Pfannenboden.
+Mikrocontroller steuert Leistung, um konstante Temperatur zu halten.
+Benutzer wählt über Touch-Display zwischen 3 Temperaturstufen (160 °C, 180 °C, 200 °C).
 
 ---
 
 ## 4. Ein-/Aus-Schalter
 
-| Nr. | Typ | Beschreibung |
-|-----|-----|---------------|
-| R4.1 | Funktional | Gerät verfügt über einen Ein-/Aus-Schalter |
-| R4.2 | Nicht-Funktional | Schalter hält ≥ 100 000 Betätigungen ohne Defekt |
+Ein- / Ausschalt-Taster
+Mikrocontroller schaltet Steuerung und Induktionsmodul ein/aus
+LED-Anzeige zeigt Ein- oder Aus-Zustand
 
 ---
 
 ## 5. Timer
 
-Die Timer-Funktion wird über **Tasten, Drehknopf oder Touchfeld** eingestellt.  
-Der Mikrocontroller zählt die Zeit herunter und regelt bei Ablauf automatisch die Abschaltung der Kochzone.
+Benutzer stellt Kochzeit über Drehregler oder Touch-Display ein (1–20 Minuten)
+Mikrocontroller zählt die Zeit herunter
+Nach Ablauf schaltet Induktionsfeld aus und signalisiert Ende (akustisch oder LED)
 
-| Nr. | Typ | Beschreibung |
-|-----|-----|---------------|
-| R5.1 | Funktional | Einstellbare Kochzeit von 1–20 Minuten |
-| R5.2 | Nicht-Funktional | Timeranzeige reagiert mit max. 500 ms Verzögerung |
-| R5.3 | Funktional | Die Zeit wird heruntergezählt werden und die Kochzone wird daraufhin abschalten. |
+
+
