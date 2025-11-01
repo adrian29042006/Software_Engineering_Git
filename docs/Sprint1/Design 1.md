@@ -1,8 +1,31 @@
-## Sprint 1:
+# 🧩 Traceability Matrix – Sprint 1  
+**Projekt:** Induktionskochfeld – Temperaturregelung  
+**Ziel:** Implementierung der Grundfunktionen (Sensorik, Leistungssteuerung, UI-Bedienung)
+
+---
 
 Umfang:
 
-Implementierung der Basisfunktionen der Temperatureinstellung und Leistungsstufen, inklusive Sensorintegration und UI-Interaktion, sodass am Ende ein funktionierendes, getestetes Teilsystem vorliegt.
+- Temperaturmessung mit Sensorik (R3.1)  
+- Grundsteuerung der Leistungsstufen (R1.1, R1.2)  
+- UI-Basisfunktion: Eingabe über Tasten/Drehknopf/Touch  
+- Reaktionszeit der UI (R1.3, R2.3)  
+- Sichtbare Statusanzeige (R2.2)  
+- Ein-/Ausschaltung des Kochfelds (R4.1)
+  
+---
+
+## 📋 Traceability Matrix
+
+| **Requirement-ID** | **Kurzbeschreibung** | **Zugeordnete Komponente(n)** | **Design-Element(e)** | **Test / Verifikation** |
+|--------------------|----------------------|--------------------------------|------------------------|--------------------------|
+| **R1.1** | 9 klar unterscheidbare Leistungsstufen | `PowerController`, `UIHandler` | Funktion `setPowerLevel(level)`, Enum `PowerLevel` | Unit-Test: Stufen 1–9 schalten korrekt |
+| **R1.2** | Auswahl über Touch / Drehknopf / Tasten | `UIHandler` | Eventhandler `onInputChange()` | UI-Test: Eingaben erkannt |
+| **R1.3** | Reaktionszeit ≤ 100 ms | `UIHandler`, `PowerController` | ISR-basiertes Event-Handling, Scheduler-Loop | Performance-Test (Timing ≤100 ms) |
+| **R3.1** | Temperatur in Pfanne wird kontinuierlich überwacht | `TempSensorReader`, `PowerController` | Funktion `readTemperature()`, Sensor-Loop | Unit-Test: Sensorwerte plausibel |
+| **R4.1** | Gerät verfügt über Ein-/Aus-Schalter | `UIHandler`, `PowerController` | Zustandsmaschine (Idle ↔ Heating) | Integrationstest: Ein/Aus-Zyklus |
+| **R2.2** | Zustand der Taste sichtbar (Ein/Aus) | `UIHandler` | Funktion `updateDisplay(status)` | Sichtprüfung: LED/Display-Feedback |
+| **R2.3** | Reaktionszeit beim Betätigen ≤ 500 ms | `UIHandler` | Event-Callback → Display-Update | Reaktionszeitmessung mit Stopwatch |
 
 ---
 
