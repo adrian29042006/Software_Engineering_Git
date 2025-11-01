@@ -18,3 +18,8 @@ Implementierung der Basisfunktionen der Temperatureinstellung und Leistungsstufe
 
 ---
 
+## Sequenzdiagramm
+
+![Kopie von Kopie von User](https://github.com/user-attachments/assets/481a4372-17d7-4f5b-9bb0-5e4d74e17226)
+
+---
