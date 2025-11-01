@@ -46,3 +46,18 @@ Umfang:
 ![Kopie von Kopie von User](https://github.com/user-attachments/assets/481a4372-17d7-4f5b-9bb0-5e4d74e17226)
 
 ---
+
+## Kommunikationsdiagramm
+
+sequenceDiagram
+
+1. Benutzer → BenutzerInterface : einschalten()
+2. BenutzerInterface → KochfeldController : handleEinschalten()
+3. KochfeldController → Heizelement : startHeating()
+4. Heizelement → KochfeldController : heatingStarted()
+5. (Parallel / optional) FehlerÜberwachung → KochfeldController : checkError()
+6. Wenn Fehler: KochfeldController → FehlerÜberwachung : getErrorStatus()
+7. FehlerÜberwachung → KochfeldController : errorDetected()
+8. KochfeldController → BenutzerInterface : zeigeFehler()
+
+
