@@ -1,9 +1,9 @@
 ## Zustandsdiagramm:
----
 <img width="1270" height="714" alt="User" src="https://github.com/user-attachments/assets/6cd9abb8-b4d9-4a46-8df0-abaf0471fc04" />
+
 ---
 
-# Traceability Matrix – Induktionskochfeld (komponentenbasiert)
+## Komponentendiagramm
 
 | Komponente | Zugeordnete Requirements |
 |------------|-------------------------|
@@ -12,4 +12,9 @@
 | Sensorik | R3.1, R3.2 |
 | Sicherheitsmodul | R2.5, R5.3 |
 | Aktuatoren | R1.1, R2.5, R4.1, R5.1, R5.3, R4.2 |
+
+---
+
+- [★ Traceability Matrix – Induktionskochfeld](docs/Sprint1/traceability_matrix.md)
+
 
