@@ -15,6 +15,6 @@
 
 ---
 
-- [★ Traceability Matrix – Induktionskochfeld](Sprint1/traceability_matrix.md)
+- [★ Traceability Matrix – Induktionskochfeld](traceability_matrix.md)
 
 
