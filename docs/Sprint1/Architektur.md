@@ -1,4 +1,4 @@
-![Uploading User.jpg…]()
+![User](https://github.com/user-attachments/assets/4baaaea9-ba07-4e9d-97b1-9b33a5e4b5b9)
 
 
 | **Komponente**      | **Requirements**                                                                          | 
