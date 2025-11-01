@@ -8,6 +8,7 @@
 
 Das System soll dem Benutzer eine Anzeige darstellen, damit der Benutzer genau weiß, welche Temperatur das Induktionskochfeld hat.  
 Das Induktionskochfeld muss **9 klar unterschiedliche Leistungsstufen** bieten.
+Der Drehregler oder das Led-Touch-Display soll dem Benutzer intuitiv und effizent Leistungsstufen-Einstellung ermöglichen.
 
 
 ---
@@ -16,7 +17,8 @@ Das Induktionskochfeld muss **9 klar unterschiedliche Leistungsstufen** bieten.
 
 Das System soll dem Benutzer per Knopfdruck eine **doppelte Zusatzleistung für 10 Minuten** bereitstellen.  
 Nach Ablauf dieser Zeit schaltet das System automatisch wieder auf **Stufe 9** zurück.  
-Bei erneutem Betätigen der Taste „P“ während der Boost-Phase soll das System deaktiviert werden.
+Bei erneutem Betätigen der Taste „P“ während der Boost-Phase soll das System deaktiviert werden. 
+Die Led Taste P soll klar den Zustand dieses Prozesses anzeigen können.
 
 ---
 
@@ -37,3 +39,4 @@ Der Benutzer soll das Gerät **einfach ein- und ausschalten** können.
 ## 5. Timer
 
 Der Benutzer soll eine **Kochzeit zwischen 1 und 20 Minuten** einstellen können, um den Kochvorgang automatisch zu steuern.
+Die Zeit soll angezeigt werden.
