@@ -4,13 +4,13 @@
 | Nr.  | Beschreibung                                                                                   |
 |------|------------------------------------------------------------------------------------------------|
 | R1.1 | 9 klar unterscheidbare Leistungsstufen |
-| R1.2 | Funktional      | Auswahl der Leistungsstufen über Touch, Drehknopf oder Tasten |
-| R2.1 | Funktional      | Taste „P“ muss klar erkennbar sein |
-| R2.5 | Funktional |Die Funktion muss 10 Minuten lang laufen und sich selbst deaktivieren. |
-| R3.1 | Funktional      | Temperatur in der Pfanne wird kontinuierlich überwacht |
-| R4.1 | Funktional      | Gerät verfügt über einen Ein-/Aus-Schalter |
-| R5.1 | Funktional      | Einstellbare Kochzeit von 1–20 Minuten |
-| R5.3 | Funktional | Die Zeit wird heruntergezählt werden und die Kochzone wird daraufhin abschalten. |
+| R1.2 | Auswahl der Leistungsstufen über Touch, Drehknopf oder Tasten |
+| R2.1 | Taste „P“ muss klar erkennbar sein |
+| R2.5 | Die Funktion muss 10 Minuten lang laufen und sich selbst deaktivieren. |
+| R3.1 | Temperatur in der Pfanne wird kontinuierlich überwacht |
+| R4.1 | Gerät verfügt über einen Ein-/Aus-Schalter |
+| R5.1 | Einstellbare Kochzeit von 1–20 Minuten |
+| R5.3 | Die Zeit wird heruntergezählt werden und die Kochzone wird daraufhin abschalten. |
 ---
 ##Nicht Funktionale Requerements
 | Nr.  | Beschreibung                                                                                   |
