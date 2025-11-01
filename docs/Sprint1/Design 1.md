@@ -17,15 +17,15 @@ Umfang:
 
 ## 📋 Traceability Matrix
 
-| **Requirement-ID** | **Kurzbeschreibung** | **Zugeordnete Komponente(n)** | **Design-Element(e)** | **Test / Verifikation** |
-|--------------------|----------------------|--------------------------------|------------------------|--------------------------|
-| **R1.1** | 9 klar unterscheidbare Leistungsstufen | `PowerController`, `UIHandler` | Funktion `setPowerLevel(level)`, Enum `PowerLevel` | Unit-Test: Stufen 1–9 schalten korrekt |
-| **R1.2** | Auswahl über Touch / Drehknopf / Tasten | `UIHandler` | Eventhandler `onInputChange()` | UI-Test: Eingaben erkannt |
-| **R1.3** | Reaktionszeit ≤ 100 ms | `UIHandler`, `PowerController` | ISR-basiertes Event-Handling, Scheduler-Loop | Performance-Test (Timing ≤100 ms) |
-| **R3.1** | Temperatur in Pfanne wird kontinuierlich überwacht | `TempSensorReader`, `PowerController` | Funktion `readTemperature()`, Sensor-Loop | Unit-Test: Sensorwerte plausibel |
-| **R4.1** | Gerät verfügt über Ein-/Aus-Schalter | `UIHandler`, `PowerController` | Zustandsmaschine (Idle ↔ Heating) | Integrationstest: Ein/Aus-Zyklus |
-| **R2.2** | Zustand der Taste sichtbar (Ein/Aus) | `UIHandler` | Funktion `updateDisplay(status)` | Sichtprüfung: LED/Display-Feedback |
-| **R2.3** | Reaktionszeit beim Betätigen ≤ 500 ms | `UIHandler` | Event-Callback → Display-Update | Reaktionszeitmessung mit Stopwatch |
+| **Requirement-ID** | **Kurzbeschreibung** | **Zugeordnete Komponente(n)** | **Test / Verifikation** |
+|--------------------|----------------------|--------------------------------|------------------------|
+| **R1.1** | 9 klar unterscheidbare Leistungsstufen | `PowerController`, `UIHandler`| Unit-Test: Stufen 1–9 schalten korrekt |
+| **R1.2** | Auswahl über Touch / Drehknopf / Tasten | `UIHandler` | UI-Test: Eingaben erkannt |
+| **R1.3** | Reaktionszeit ≤ 100 ms | `UIHandler`, `PowerController`| Performance-Test (Timing ≤100 ms) |
+| **R3.1** | Temperatur in Pfanne wird kontinuierlich überwacht | `TempSensorReader`, `PowerController` | Unit-Test: Sensorwerte plausibel |
+| **R4.1** | Gerät verfügt über Ein-/Aus-Schalter | `UIHandler`, `PowerController` | Integrationstest: Ein/Aus-Zyklus |
+| **R2.2** | Zustand der Taste sichtbar (Ein/Aus) | `UIHandler` | Sichtprüfung: LED/Display-Feedback |
+| **R2.3** | Reaktionszeit beim Betätigen ≤ 500 ms | `UIHandler` | Reaktionszeitmessung mit Stopwatch |
 
 ---
 
