@@ -1,31 +1,28 @@
 # Anforderungen Temperatursensor Induktionskochfeld
 
-## Hier Nochmal eine kleine übersicht von den Requirements
-
-| Nr.   | Typ             | Beschreibung |
-|------|-----------------|--------------|
-| R1.1 | Funktional      | 9 klar unterscheidbare Leistungsstufen |
+##Funktionale Requerements
+| Nr.  | Beschreibung |
+|------|--------------|
+| R1.1 | 9 klar unterscheidbare Leistungsstufen |
 | R1.2 | Funktional      | Auswahl der Leistungsstufen über Touch, Drehknopf oder Tasten |
-| R1.3 | Nicht-Funktional | Reaktionszeit ≤ 100 ms |
-| R1.4 | Nicht-Funktional | Zuverlässige Funktion auch bei verschmutzten Fingern |
-| R1.5 | Nicht-Funktional | Lebensdauer der LED-Anzeige ≥ 500 h |
-|------|-----------------|--------------|
 | R2.1 | Funktional      | Taste „P“ muss klar erkennbar sein |
-| R2.2 | Nicht-Funktional | Zustand der Taste (Ein/Aus) muss sichtbar sein |
-| R2.3 | Nicht-Funktional | Reaktionszeit beim Betätigen ≤ 500 ms |
-| R2.4 | Nicht-Funktional | Taste „P“ muss sich in Form oder Farbe von anderen unterscheiden |
 | R2.5 | Funktional |Die Funktion muss 10 Minuten lang laufen und sich selbst deaktivieren. |
-|------|-----------------|--------------|
 | R3.1 | Funktional      | Temperatur in der Pfanne wird kontinuierlich überwacht |
-| R3.2 | Nicht-Funktional | Anzeigeverzögerung ≤ 500 ms |
-|------|-----------------|--------------|
 | R4.1 | Funktional      | Gerät verfügt über einen Ein-/Aus-Schalter |
-| R4.2 | Nicht-Funktional | Schalter hält ≥ 100 000 Betätigungen ohne Defekt |
-|------|-----------------|--------------|
 | R5.1 | Funktional      | Einstellbare Kochzeit von 1–20 Minuten |
-| R5.2 | Nicht-Funktional | Timeranzeige reagiert mit max. 500 ms Verzögerung |
 | R5.3 | Funktional | Die Zeit wird heruntergezählt werden und die Kochzone wird daraufhin abschalten. |
-
+---
+##Nicht Funktionale Requerements
+| Nr.  | Beschreibung |
+| R1.3 | Reaktionszeit ≤ 100 ms |
+| R1.4 | Zuverlässige Funktion auch bei verschmutzten Fingern |
+| R1.5 | Lebensdauer der LED-Anzeige ≥ 500 h |
+| R2.2 | Zustand der Taste (Ein/Aus) muss sichtbar sein |
+| R2.3 | Reaktionszeit beim Betätigen ≤ 500 ms |
+| R2.4 | Taste „P“ muss sich in Form oder Farbe von anderen unterscheiden |
+| R3.2 | Anzeigeverzögerung ≤ 500 ms |
+| R4.2 | Schalter hält ≥ 100 000 Betätigungen ohne Defekt |
+| R5.2 | Timeranzeige reagiert mit max. 500 ms Verzögerung |
 ---
 
 ![Komponentendiagramm](https://github.com/adrian29042006/Software_Engineering_Git/blob/main/lib/Sensor%20(Hardware%20Block)%20NTC%20Widerstand%20ADC.pdf)
