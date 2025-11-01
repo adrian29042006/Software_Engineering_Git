@@ -11,3 +11,10 @@ Implementierung der Basisfunktionen der Temperatureinstellung und Leistungsstufe
 <img width="819" height="751" alt="Kopie von User" src="https://github.com/user-attachments/assets/05dd5eb9-e8fa-4443-b0f5-9ed03908a764" />
 
 ---
+
+## Zustandsdiagramm
+
+<img width="956" height="726" alt="Kopie von User (1)" src="https://github.com/user-attachments/assets/29636f87-04c0-4e19-bc0e-90838addd052" />
+
+---
+
