@@ -1,6 +1,7 @@
-##Zustandsdiagramm:
+## Zustandsdiagramm:
+---
 <img width="1270" height="714" alt="User" src="https://github.com/user-attachments/assets/6cd9abb8-b4d9-4a46-8df0-abaf0471fc04" />
-
+---
 
 | **Komponente**      | **Requirements**                                                                          | 
 |---------------------|-------------------------------------------------------------------------------------------|
