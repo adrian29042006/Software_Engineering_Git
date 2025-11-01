@@ -1,8 +1,8 @@
 # Anforderungen Temperatursensor Induktionskochfeld
 
 ##Funktionale Requerements
-| Nr.  | Beschreibung |
-|------|--------------|
+| Nr.  | Beschreibung                                                                                   |
+|------|------------------------------------------------------------------------------------------------|
 | R1.1 | 9 klar unterscheidbare Leistungsstufen |
 | R1.2 | Funktional      | Auswahl der Leistungsstufen über Touch, Drehknopf oder Tasten |
 | R2.1 | Funktional      | Taste „P“ muss klar erkennbar sein |
@@ -13,7 +13,8 @@
 | R5.3 | Funktional | Die Zeit wird heruntergezählt werden und die Kochzone wird daraufhin abschalten. |
 ---
 ##Nicht Funktionale Requerements
-| Nr.  | Beschreibung |
+| Nr.  | Beschreibung                                                                                   |
+|------|------------------------------------------------------------------------------------------------|
 | R1.3 | Reaktionszeit ≤ 100 ms |
 | R1.4 | Zuverlässige Funktion auch bei verschmutzten Fingern |
 | R1.5 | Lebensdauer der LED-Anzeige ≥ 500 h |
