@@ -24,6 +24,4 @@
 | R3.2 | Anzeigeverzögerung ≤ 500 ms |
 | R4.2 | Schalter hält ≥ 100 000 Betätigungen ohne Defekt |
 | R5.2 | Timeranzeige reagiert mit max. 500 ms Verzögerung |
----
-
 
