@@ -6,8 +6,8 @@
 
 ## 📄 Dokumente
 
-- [📘 Lastenheft](idea/Lastenheft-Temperatursensor.md)  
-- [🛠️ Pflichtenheft](idea/Pflichtenheft-Temperatursensor.md)
+- [📘 Lastenheft](docs/Lastenheft.md)  
+- [🛠️ Pflichtenheft](docs/Pflichtenheft.md)
 
 ---
 
