@@ -49,7 +49,7 @@ Umfang:
 
 ## Kommunikationsdiagramm
 
-sequenceDiagram
+
 
 1. Benutzer → BenutzerInterface : einschalten()
 2. BenutzerInterface → KochfeldController : handleEinschalten()
