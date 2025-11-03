@@ -1,6 +1,6 @@
 # Anforderungen Temperatursensor Induktionskochfeld
 
-##Funktionale Requerements
+## Funktionale Requerements
 | Nr.  | Beschreibung                                                                                   |
 |------|------------------------------------------------------------------------------------------------|
 | R1.1 | 9 klar unterscheidbare Leistungsstufen |
@@ -12,7 +12,7 @@
 | R5.1 | Einstellbare Kochzeit von 1–20 Minuten |
 | R5.3 | Die Zeit wird heruntergezählt werden und die Kochzone wird daraufhin abschalten. |
 ---
-##Nicht Funktionale Requerements
+## Nicht Funktionale Requerements
 | Nr.  | Beschreibung                                                                                   |
 |------|------------------------------------------------------------------------------------------------|
 | R1.3 | Reaktionszeit ≤ 100 ms |
