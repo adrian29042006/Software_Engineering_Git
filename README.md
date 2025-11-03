@@ -20,5 +20,5 @@ Ziel ist es, Anforderungen (Lastenheft) und technische Umsetzung (Pflichtenheft)
 **Fach:** Software Engineering  
 **Jahr:** 2025
 
--[Requierements](docs/Sprint1/Requierements.md)
+-[Requierements](docs/Requierements.md)
 
