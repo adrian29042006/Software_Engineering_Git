@@ -31,7 +31,7 @@ Umfang:
 
 ## Klassendiagramm
 
-<img width="819" height="751" alt="Kopie von User" src="https://github.com/user-attachments/assets/05dd5eb9-e8fa-4443-b0f5-9ed03908a764" />
+<img width="1119" height="1269" alt="image" src="https://github.com/user-attachments/assets/73d98317-08e6-4edf-929f-2c90edf59d4d" />
 
 ---
 
