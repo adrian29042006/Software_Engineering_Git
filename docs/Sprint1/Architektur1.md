@@ -38,6 +38,6 @@
 
 ---
 
- [★ Traceability Matrix – Induktionskochfeld]([traceability_matrix.md](https://github.com/adrian29042006/Software_Engineering_Git/blob/main/docs/traceability_matrix.md))
+ [★ Traceability Matrix – Induktionskochfeld](traceability_matrix.md)
 
 
