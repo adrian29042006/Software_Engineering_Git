@@ -3,8 +3,9 @@
 > Übung zu **Lasten- und Pflichtenheft**
 
 ---
-GITHUB Repository:
-(https://github.com/KarstenBeckerTHD/Software-Engineering-Musterbeispiel)
+
+[KarstenBeckerGITHUB](https://github.com/KarstenBeckerTHD/Software-Engineering-Musterbeispiel)
+---
 ## 📄 Dokumente
 
 - [📘 Lastenheft](docs/Lastenheft.md)  
