@@ -38,6 +38,9 @@ Die Requirements die ich für diesen Sprint ausgewählt habe sind:
 - R3.1:	Temperatur in der Pfanne wird kontinuierlich überwacht
 - R4.1: Gerät verfügt über einen Ein-/Aus-Schalter
 
-Diese wurden anschließend in der Traceability Matrix nochmal aufgefasst. 
+Diese wurden anschließend in der Traceability Matrix nochmal genauer beschrieben. 
 
-### Design: [docs/Sprint1/Design 1.md]
+### Design1: [docs/Sprint1/Design 1.md]
+
+Als erstes habe ich ein Klassendiagramm erstellt: [https://private-user-images.githubusercontent.com/237076980/509184594-73d98317-08e6-4edf-929f-2c90edf59d4d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjIyODM4ODcsIm5iZiI6MTc2MjI4MzU4NywicGF0aCI6Ii8yMzcwNzY5ODAvNTA5MTg0NTk0LTczZDk4MzE3LTA4ZTYtNGVkZi05MjlmLTJjOTBlZGY1OWQ0ZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTEwNFQxOTEzMDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yYzc2YTNkYzM4ZTkxNWFmY2YyMDZkNzY5NzVmYTg4OWFmY2MzZWY2NGJiNDEzMTg1NWIwNDE5NWEzZjFiZGE4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.ihS2ErFAjI8kgmh3_HfT9Rj410Y8xpeAIFsr1H_wcpM]
+
