@@ -50,15 +50,9 @@ Umfang:
 
 ## Kommunikationsdiagramm
 
+<img width="1920" height="1080" alt="Benutzer" src="https://github.com/user-attachments/assets/a49b4093-3691-4d3e-b4de-b95931c2bf6e" />
 
 
-1. Benutzer → BenutzerInterface : einschalten()
-2. BenutzerInterface → KochfeldController : handleEinschalten()
-3. KochfeldController → Heizelement : startHeating()
-4. Heizelement → KochfeldController : heatingStarted()
-5. (Parallel / optional) FehlerÜberwachung → KochfeldController : checkError()
-6. Wenn Fehler: KochfeldController → FehlerÜberwachung : getErrorStatus()
-7. FehlerÜberwachung → KochfeldController : errorDetected()
-8. KochfeldController → BenutzerInterface : zeigeFehler()
+
 
 
