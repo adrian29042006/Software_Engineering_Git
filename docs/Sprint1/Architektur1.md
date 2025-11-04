@@ -38,6 +38,6 @@
 
 ---
 
- [★ Traceability Matrix – Induktionskochfeld](docs/traceability_matrix.md)
+ [★ Traceability Matrix – Induktionskochfeld](traceability_matrix.md)
 
 
