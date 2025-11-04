@@ -20,8 +20,9 @@ Sprintziel:
 2. User Interface
 3. Logik
 
-### Schritt 1: Architektur
+### Schritt 2: Architektur
 
+[Architektur](Architektur1.md)
 
 ### Schritt 3: Design
 
