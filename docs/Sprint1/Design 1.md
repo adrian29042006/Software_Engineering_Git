@@ -22,10 +22,11 @@ Umfang:
 | **R1.1** | 9 klar unterscheidbare Leistungsstufen | `PowerController`, `UIHandler`, `Heizelemente`| Unit-Test: Stufen 1–9 schalten korrekt |
 | **R1.2** | Auswahl über Touch / Drehknopf / Tasten | `UIHandler` | UI-Test: Eingaben erkannt |
 | **R1.3** | Reaktionszeit ≤ 100 ms | `UIHandler`, `PowerController`, `Heizelemente`| Performance-Test (Timing ≤100 ms) |
-| **R3.1** | Temperatur in Pfanne wird kontinuierlich überwacht | `TempSensorReader`, `PowerController`, `Heizelemente` | Unit-Test: Sensorwerte plausibel |
-| **R4.1** | Gerät verfügt über Ein-/Aus-Schalter | `UIHandler`, `PowerController`,  `Heizelemente` | Integrationstest: Ein/Aus-Zyklus |
+| **R2.1** | Taste „P“ muss klar erkennbar sein | `UIHandler` | Sichtprüfung: LED/Display-Feedback |
 | **R2.2** | Zustand der Taste sichtbar (Ein/Aus) | `UIHandler` | Sichtprüfung: LED/Display-Feedback |
 | **R2.3** | Reaktionszeit beim Betätigen ≤ 500 ms | `UIHandler`, `PowerController`, `Heizelemente` | Reaktionszeitmessung |
+| **R3.1** | Temperatur in Pfanne wird kontinuierlich überwacht | `TempSensorReader`, `PowerController`, `Heizelemente` | Unit-Test: Sensorwerte plausibel |
+| **R4.1** | Gerät verfügt über Ein-/Aus-Schalter | `UIHandler`, `PowerController`,  `Heizelemente` | Integrationstest: Ein/Aus-Zyklus |
 
 ---
 
