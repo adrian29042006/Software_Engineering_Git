@@ -37,7 +37,8 @@ Umfang:
 
 ## Zustandsdiagramm
 
-<img width="956" height="726" alt="Kopie von User (1)" src="https://github.com/user-attachments/assets/29636f87-04c0-4e19-bc0e-90838addd052" />
+<img width="1920" height="1080" alt="EINAus-Schalter" src="https://github.com/user-attachments/assets/8fb90c5a-ca70-4152-8d4d-5a241abe46eb" />
+
 
 ---
 
