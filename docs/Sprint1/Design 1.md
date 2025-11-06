@@ -17,11 +17,11 @@ Umfang:
 
 ## 📋 Traceability Matrix
 
-| **Requirement-ID** | **Kurzbeschreibung** | **Zugeordnete Komponente(n)** | **Test / Verifikation** |
-|--------------------|----------------------|--------------------------------|------------------------|
-| **R1.1** | 9 klar unterscheidbare Leistungsstufen | `PowerController`, `UIHandler`, `Heizelemente`| Unit-Test: Stufen 1–9 schalten korrekt |
-| **R1.2** | Auswahl über Touch / Drehknopf / Tasten | `UIHandler` | UI-Test: Eingaben erkannt |
-| **R1.3** | Reaktionszeit ≤ 100 ms | `UIHandler`, `PowerController`, `Heizelemente`| Performance-Test (Timing ≤100 ms) |
+| **Requirement-ID** | **Kurzbeschreibung** | **Zugeordnete Komponente(n)**  | Design Klassen         |**Test / Verifikation** |
+|--------------------|----------------------|--------------------------------|------------------------|------------------------|
+| **R1.1** | 9 klar unterscheidbare Leistungsstufen | `PowerController`, `UIHandler`, `Heizelemente`|`LED-Display`, `Button`, `PowerManager`, `PowerSwitch`| Unit-Test: Stufen 1–9 schalten korrekt |
+| **R1.2** | Auswahl über Touch / Drehknopf / Tasten | `UIHandler` | `Button`, `Touchcontroller`|UI-Test: Eingaben erkannt |
+| **R1.3** | Reaktionszeit ≤ 100 ms | `UIHandler`, `PowerController`, `Heizelemente`| `Button`, `Touchcontroller`, `Mikrocontroller`|Performance-Test (Timing ≤100 ms) |
 | **R2.1** | Taste „P“ muss klar erkennbar sein | `UIHandler` | Sichtprüfung: LED/Display-Feedback |
 | **R2.2** | Zustand der Taste sichtbar (Ein/Aus) | `UIHandler` | Sichtprüfung: LED/Display-Feedback |
 | **R2.3** | Reaktionszeit beim Betätigen ≤ 500 ms | `UIHandler`, `PowerController`, `Heizelemente` | Reaktionszeitmessung |
