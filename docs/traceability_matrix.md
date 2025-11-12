@@ -21,7 +21,7 @@
 | R1.4 | Zuverlässige Funktion bei verschmutzten Fingern | UI, Steuerung/Logik | Touch-Eingabe mit feuchten Fingern prüfen |
 | R1.5 | Lebensdauer der LED-Anzeige ≥ 500 h | UI | Dauerbetriebstest der LEDs |
 | R2.2 | Zustand der Taste (Ein/Aus) muss sichtbar sein | UI | Sichtprüfung der Zustandsanzeige |`UIHandler` |`LED-Display`, `Button`, `LED`|
-| R2.3 | Reaktionszeit beim Betätigen ≤ 500 ms | UI, Steuerung/Logik | Reaktionszeitmessung der Taste |`UIHandler`, `PowerController`, `Heizelemente`|
+| R2.3 | Reaktionszeit beim Betätigen ≤ 500 ms | UI, Steuerung/Logik | Reaktionszeitmessung der Taste |`UIHandler`, `PowerController`, `Heizelemente`| `Button`, `TouchController`, `TempController`|
 | R2.4 | Taste „P“ muss sich in Form oder Farbe unterscheiden | UI | Sichtprüfung / Designvergleich |
 | R3.2 | Anzeigeverzögerung ≤ 500 ms | UI, Sensorik, Steuerung/Logik | Test der Sensoranzeige auf Display |
 | R4.2 | Schalter hält ≥ 100.000 Betätigungen ohne Defekt | UI, Aktuatoren | Dauerbelastungstest des Schalters |
