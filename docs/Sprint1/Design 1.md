@@ -1,6 +1,3 @@
-# 🧩 Traceability Matrix – Sprint 1  
-**Projekt:** Induktionskochfeld – Temperaturregelung  
-**Ziel:** Implementierung der Grundfunktionen (Sensorik, Leistungssteuerung, UI-Bedienung)
 
 ---
 
