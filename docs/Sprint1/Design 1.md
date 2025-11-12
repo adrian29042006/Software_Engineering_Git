@@ -13,20 +13,6 @@ Umfang:
 - Sichtbare Statusanzeige (R2.2)  
 - Ein-/Ausschaltung des Kochfelds (R4.1)
   
----
-
-## 📋 Traceability Matrix
-
-| **Requirement-ID** | **Kurzbeschreibung** | **Zugeordnete Komponente(n)**  | Design Klassen         |**Test / Verifikation** |
-|--------------------|----------------------|--------------------------------|------------------------|------------------------|
-| **R1.1** | 9 klar unterscheidbare Leistungsstufen | `PowerController`, `UIHandler`, `Heizelemente`|`LED-Display`, `Button`, `PowerManager`, `PowerSwitch`| Unit-Test: Stufen 1–9 schalten korrekt |
-| **R1.2** | Auswahl über Touch / Drehknopf / Tasten | `UIHandler` | `Button`, `Touchcontroller`|UI-Test: Eingaben erkannt |
-| **R1.3** | Reaktionszeit ≤ 100 ms | `UIHandler`, `PowerController`, `Heizelemente`| `Button`, `Touchcontroller`, `Mikrocontroller`|Performance-Test (Timing ≤100 ms) |
-| **R2.1** | Taste „P“ muss klar erkennbar sein | `UIHandler` | `LED-Display`, `Button`, `LED`|Sichtprüfung: LED/Display-Feedback |
-| **R2.2** | Zustand der Taste sichtbar (Ein/Aus) | `UIHandler` |`LED-Display`, `Button`, `LED`| Sichtprüfung: LED/Display-Feedback |
-| **R2.3** | Reaktionszeit beim Betätigen ≤ 500 ms | `UIHandler`, `PowerController`, `Heizelemente` | `Button`, `TouchController`, `TempController` | Reaktionszeitmessung |
-| **R3.1** | Temperatur in Pfanne wird kontinuierlich überwacht | `TempSensorReader`, `PowerController`, `Heizelemente`| `TimerController`, `TempController`,`TempSensor`, `TempSensor`, `InducitonCoil`, `TimerController`, `TimerManager` | Unit-Test: Sensorwerte plausibel |
-| **R4.1** | Gerät verfügt über Ein-/Aus-Schalter | `UIHandler`, `PowerController`,  `Heizelemente` | `Button`|Integrationstest: Ein/Aus-Zyklus |
 
 ---
 
