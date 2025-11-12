@@ -15,8 +15,8 @@
 
 ## Nicht-funktionale Anforderungen
 
-| Anforderungs-ID | Beschreibung | Komponenten | Testfälle / Bemerkungen |
-|-----------------|-------------|------------|------------------------|
+| Anforderungs-ID | Beschreibung | Komponenten | Testfälle / Bemerkungen |**Zugeordnete Komponente(n)**  | Design Klassen         |
+|-----------------|--------------|-------------|-------------------------|-------------------------------|------------------------|
 | R1.3 | Reaktionszeit ≤ 100 ms | UI, Steuerung/Logik | Zeitmessung der Leistungsstufenauswahl |`UIHandler`, `PowerController`, `Heizelemente`| `Button`, `Touchcontroller`, `Mikrocontroller`|
 | R1.4 | Zuverlässige Funktion bei verschmutzten Fingern | UI, Steuerung/Logik | Touch-Eingabe mit feuchten Fingern prüfen |
 | R1.5 | Lebensdauer der LED-Anzeige ≥ 500 h | UI | Dauerbetriebstest der LEDs |
