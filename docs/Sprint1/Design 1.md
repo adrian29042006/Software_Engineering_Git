@@ -38,7 +38,8 @@ Umfang:
 
 ## Kommunikationsdiagramm
 
-<img width="1920" height="1080" alt="Benutzer" src="https://github.com/user-attachments/assets/a49b4093-3691-4d3e-b4de-b95931c2bf6e" />
+<img width="1920" height="1080" alt="Benutzer (2)" src="https://github.com/user-attachments/assets/72a17f76-2952-4ef4-9635-94c11f90f5a8" />
+
 
 
 
