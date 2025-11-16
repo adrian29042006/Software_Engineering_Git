@@ -29,7 +29,8 @@ Umfang:
 
 ## Sequenzdiagramm
 
-![Kopie von Kopie von User](https://github.com/user-attachments/assets/481a4372-17d7-4f5b-9bb0-5e4d74e17226)
+<img width="1920" height="1080" alt="Benutzer" src="https://github.com/user-attachments/assets/ff9514f0-3ef1-4b7a-bf87-57af8c12aef2" />
+
 
 ---
 
