@@ -8,7 +8,7 @@
 | R1.2 | Auswahl der Leistungsstufen über Touch, Drehknopf oder Tasten | UI, Steuerung/Logik | Test der Eingabemöglichkeiten | `UIHandler` | `Button`, `Touchcontroller`|
 | R2.1 | Taste „P“ muss klar erkennbar sein | UI | Sichtprüfung und Vergleich mit anderen Tasten |`UIHandler` | `LED-Display`, `Button`, `LED`
 | R2.5 | Die Funktion muss 10 Minuten laufen und sich selbst deaktivieren | Steuerung/Logik, Sicherheitsmodul, Aktuatoren | Timer testen, automatische Abschaltung prüfen |
-| R3.1 | Temperatur in der Pfanne wird kontinuierlich überwacht | Sensorik, Steuerung/Logik | Kontinuierliche Temperaturmessung prüfen |`TempSensorReader`, `PowerController`, `Heizelemente`| `TimerController`, `TempController`,`TempSensor`, `TempSensor`, `InducitonCoil`, `TimerController`, `TimerManager` |
+| R3.1 | Temperatur in der Pfanne wird kontinuierlich überwacht | Sensorik, Steuerung/Logik | Modultest: 1,2 und 3, Integrationstest: 4, 5 und 6 |`TempSensorReader`, `PowerController`, `Heizelemente`| `TimerController`, `TempController`,`TempSensor`, `TempSensor`, `InducitonCoil`, `TimerController`, `TimerManager` |
 | R4.1 | Gerät verfügt über einen Ein-/Aus-Schalter | UI, Steuerung/Logik, Aktuatoren | Schalterfunktion testen | `UIHandler`, `PowerController`,  `Heizelemente` | `Button`
 | R5.1 | Einstellbare Kochzeit von 1–20 Minuten | UI, Steuerung/Logik, Aktuatoren | Timerfunktion testen |
 | R5.3 | Zeit wird heruntergezählt und Kochzone abschalten | Steuerung/Logik, Sicherheitsmodul, Aktuatoren | Timerabschaltung prüfen |
