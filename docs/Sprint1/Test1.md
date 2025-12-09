@@ -35,7 +35,7 @@
   - Erwartetes Ergebnis: Steuerung erkennt Kommunikationsfehler, gibt Fehler aus
   - Nachbedingung: Kochfeld schaltet ggf. in Sicherheitsmodus, Warnmeldung angezeigt
 
-***Testfall 6: Sensor + Kochfeldsteuerung Grenzwerttemperatur
+***Testfall 6: Sensor + Kochfeldsteuerung Grenzwerttemperatur***
   - Vorbedinung: Kochfeld auf maximale Temperatur eingestellt(z.b. 300°C). Sensor ist aktiv
   - Aktion: Steuerung liest Sensorwert, prüft Soll/ist-Differenz
   - Erwartetes Ergebnis: Steuerung begrenz Heizleistung, überschreitet max. Temperatur nicht
