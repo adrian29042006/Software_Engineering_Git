@@ -7,7 +7,7 @@
  -  Nachbedingung: Sensor leifert korrekte Werte, Kochfeld reagiert normal auf Steuerung
 
 ***Testfall 2: Sensorwert außerhalb Grenzbereich***
-- Vorbedingung: Sensor ist kaliriert, Kochfeld eingeschaltet, Extremteperatur 300°C simuliert
+- Vorbedingung: Sensor ist kalibriert, Kochfeld eingeschaltet, Extremteperatur 300°C simuliert
 - Aktion: Sensor liest aktuellen Temperaturwert
 - Erwartetes Ergebnis: Sensor meldet Fehlercode
 - Nachbedingung; Kochfeld schaltet ggf. ab, Sicherheitsprotokoll aktiviert
