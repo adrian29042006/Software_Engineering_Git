@@ -23,6 +23,6 @@
 | R2.2 | Zustand der Taste (Ein/Aus) muss sichtbar sein | UI | Sichtprüfung der Zustandsanzeige |`UIHandler` |`LED-Display`, `Button`, `LED`|
 | R2.3 | Reaktionszeit beim Betätigen ≤ 500 ms | UI, Steuerung/Logik | Reaktionszeitmessung der Taste |`UIHandler`, `PowerController`, `Heizelemente`| `Button`, `TouchController`, `TempController`|
 | R2.4 | Taste „P“ muss sich in Form oder Farbe unterscheiden | UI | Sichtprüfung / Designvergleich |
-| R3.2 | Anzeigeverzögerung ≤ 500 ms | UI, Sensorik, Steuerung/Logik | Test der Sensoranzeige auf Display |
+| R3.2 | Anzeigeverzögerung ≤ 500 ms | UI, Sensorik, Steuerung/Logik | Integrationstest: 4 und 6 |
 | R4.2 | Schalter hält ≥ 100.000 Betätigungen ohne Defekt | UI, Aktuatoren | Dauerbelastungstest des Schalters |
 | R5.2 | Timeranzeige reagiert mit max. 500 ms Verzögerung | UI, Steuerung/Logik | Test der Timeranzeige auf Genauigkeit |
