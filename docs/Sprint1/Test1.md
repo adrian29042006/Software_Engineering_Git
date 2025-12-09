@@ -39,4 +39,4 @@
   - Vorbedinung: Kochfeld auf maximale Temperatur eingestellt(z.b. 300°C). Sensor ist aktiv
   - Aktion: Steuerung liest Sensorwert, prüft Soll/ist-Differenz
   - Erwartetes Ergebnis: Steuerung begrenz Heizleistung, überschreitet max. Temperatur nicht
-  - Nachbedingung: Kochfeld erreicht max. Temperatur, überschreitet nciht Sicherheitsgrenze
+  - Nachbedingung: Kochfeld erreicht max. Temperatur, überschreitet Sicherheitsgrenze nicht
