@@ -68,10 +68,17 @@ Die Implementierung endet mit dem vollständigen, versionierten Quellcode, der n
 ---
 
 ### Schritt 5: Testphase
-Nach der Implementierungsphase, in der der geplante Code aus den Design-Diagrammen vollständig ausformuliert und versioniert wurde, folgt die Testphase als entscheidender Validierungsschritt. Hier wird der Quellcode systematisch auf Funktionalität, Korrektheit und Robustheit geprüft, um Abweichungen von den ursprünglichen Anforderungen frühzeitig zu erkennen und zu beheben.​
+Nach der Implementierungsphase folgt die Testphase, in der die entwickelte Software systematisch überprüft wird. Ziel dieser Phase ist es zu kontrollieren, ob alle zuvor definierten Anforderungen erfüllt werden und ob die Anwendung stabil und fehlerfrei funktioniert.
 
-Testprozess
-Zunächst erfolgen Unit-Tests auf individuellen Methoden und Klassen, um die Logik isoliert zu validieren, gefolgt von Integrationstests, die Objektinteraktionen aus den Sequenzdiagrammen überprüfen. Ergänzt werden diese durch Systemtests auf die Gesamtfunktionalität sowie Last- und Sicherheitsprüfungen, wobei automatisierte Frameworks wie JUnit oder pytest eingesetzt werden.​
+In der Testphase werden zunächst einzelne Komponenten der Software mittels Unit-Tests geprüft, um sicherzustellen, dass jede Klasse und Methode das gewünschte Verhalten zeigt. Anschließend werden Integrationstests durchgeführt, bei denen das Zusammenspiel mehrerer Module getestet wird, um Schnittstellenprobleme und unerwartete Wechselwirkungen zu erkennen.
 
-Übergang zur Deployment-Phase
-Die Testphase schließt mit einem stabilen, fehlerfreien Code ab, der Berichte und Metriken liefert, bevor er in der Deployment-Phase produktiv ausgerollt wird
+Darauf aufbauend folgen Systemtests, bei denen das Gesamtsystem in einer möglichst realistischen Umgebung getestet wird, um typische Nutzungsszenarien, Randfälle und Fehlersituationen abzudecken. Die Ergebnisse der Tests werden dokumentiert, gefundene Fehler werden analysiert, priorisiert und in weiteren Iterationen behoben, bis ein stabiler Stand erreicht ist. Nach Abschluss der Testphase bildet dieser geprüfte Stand die Grundlage für die anschließende Review- und Retrospektiven-Phase.
+
+### Schritt 6: Rewies und Retroperspektive
+Nach der Testphase, in der der Code auf Funktionalität, Korrektheit und Robustheit geprüft und stabilisiert wurde, folgt die Review- und Retrospektive-Phase als abschließender Qualitätsschritt. Hier werden der Quellcode und die gesamte Entwicklung durch Peer-Reviews validiert, während retrospektive Meetings den Prozess reflektieren, um Lernpotenziale für zukünftige Iterationen zu identifizieren.​
+
+Review- und Retrospektivprozess
+Zunächst führen Code-Reviews durch Kollegen detaillierte Prüfungen auf Stil, Sicherheit und Optimierung durch, oft mit Tools wie GitHub Pull Requests, ergänzt um Architektur-Reviews zur Übereinstimmung mit Design-Diagrammen. Parallel analysiert die Retrospektive in einem strukturierten Meeting Erfolge, Herausforderungen und Verbesserungsvorschläge, um den Entwicklungsworkflow kontinuierlich zu optimieren.​
+
+Übergang zur nächsten Phase
+Diese Phase endet mit genehmigtem Code und dokumentierten Erkenntnissen, die die Grundlage für Sprint 2 schaffen.
