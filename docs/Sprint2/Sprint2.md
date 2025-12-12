@@ -1,6 +1,6 @@
 # Sprint 2
 ---
-### Sprint Planning
+### 1. Sprint Planning
 Zu Beginn des 2. Sprint habe ich die relevanten Anforderungen (Requirements) ausgewählt. Konkret wurde die folgende Kernfunktion identifiziert und berücksichtigt:
 - Barrierefreiheit
 - Sicherheit während der Benutzung und drüber hinaus
@@ -40,9 +40,7 @@ Alle Requirements (Sprint 1 + 2):
 - R4.2 Schalter hält ≥ 100.000 Betätigungen ohne Defek
 - R5.3 Zeit wird heruntergezählt und Kochzone abschalten
 
-Diese wurde nanschließend in der Traceability Matrix nochmal genauer beschrieben.
-
-### 1. Sprint Plan
+Diese wurden anschließend in der Traceability Matrix nochmal genauer beschrieben.
 
 
 
