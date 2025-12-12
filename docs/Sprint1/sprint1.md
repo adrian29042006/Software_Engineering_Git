@@ -65,7 +65,7 @@ Nach der Design-Phase mit Sequenzdiagrammen, Klassendiagrammen und weiteren UML-
 Der Prozess beginnt mit der Deklaration der Klassen und Methoden gemäß dem Klassendiagramm, gefolgt von der Ausformulierung der Logik in Schleifen, Bedingungen und Aufrufen, die den Sequenzdiagrammen entsprechen. 
 Die Implementierung endet mit dem vollständigen, versionierten Quellcode, der nun in der Testphase auf Korrektheit, Funktionalität und Robustheit geprüft wird.
 
-[Code1]([(https://github.com/adrian29042006/Software_Engineering_Git/blob/main/src/code.cpp )
+[Code1](https://github.com/adrian29042006/Software_Engineering_Git/blob/main/src/code.cpp)
 
 
 
