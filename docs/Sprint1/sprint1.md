@@ -23,7 +23,9 @@ Sprintziel:
 ### Schritt 2: Architektur
 
 [Architektur](Architektur1.md)
+
 ---
+
 ### Schritt 3: Design
 
 [Design1](https://github.com/adrian29042006/Software_Engineering_Git/blob/main/docs/Sprint1/Design%201.md)
