@@ -27,7 +27,6 @@ Bei der Auswahl der Requirements wurde darauf geachtet, Nice-to-Have-Requirement
 Alle Requirements (Sprint 1 + 2):
 - R1.1 9 klar unterscheidbare Leistungsstufen
 - R1.2 Auswahl der Leistungsstufen über Touch, Drehknopf oder Tasten
-- R1.3 Reaktionszeit ≤ 100 ms
 - R1.4 Zuverlässige Funktion bei verschmutzten Fingern
 - R1.5 Lebensdauer der LED-Anzeige ≥ 500 h
 - R2.1 Taste „P“ muss klar erkennbar sein
