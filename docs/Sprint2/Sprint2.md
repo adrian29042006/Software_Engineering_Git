@@ -2,6 +2,16 @@
 ---
 ### Sprint Planning
 Zu Beginn des 2. Sprint habe ich die relevanten Anforderungen (Requirements) ausgewählt. Konkret wurde die folgende Kernfunktion identifiziert und berücksichtigt:
+- Barrierefreiheit
+- Sicherheit während der Benutzung und drüber hinaus
+- Zuverlässigkeit und Lebensdauer
+- Funktionale Logik und Ablauf
+- Bedienung und Ergonomie
+
+
+---
+Sprint Datum : 12.12.2025
+---
 
 Es wurden diese Requirements ergänzt:
 - R1.4 Zuverlässige Funktion bei verschmutzten Fingern
@@ -11,7 +21,7 @@ Es wurden diese Requirements ergänzt:
 - R4.2 Schalter hält ≥ 100.000 Betätigungen ohne Defekt
 - R5.3 Zeit wird heruntergezählt und Kochzone abschalten
 
-Bei der Auswahl der Anforderungen wurde bewusst auf eine realistische und zielgerichtete Planung geachtet. Anforderungen mit der Priorität „Kann“ (Nice-to-have) wurden zunächst nicht in den Sprint aufgenommen, um die vorhandenen Ressourcen effizient einzusetzen und erstmal die Hauptfunktionalität umzusetzen.
+Bei der Auswahl der Requirements wurde darauf geachtet, Nice-to-Have-Requirements nicht in diesem Sprint aufzunehmen (diese werden in Sprint 3 umgesetzt). Es wurden bestimmte Anforderungen ausgewählt, die für die grundlegende Funktion und sichere Bedienung des Produkts zwingend notwendig sind. Ziel war es, in diesem Sprint ausschließlich jene Kernanforderungen zu berücksichtigen, die den zuverlässigen und benutzerfreundlichen Betrieb sicherstellen.
 
 
 Alle Requirements (Sprint 1 + 2):
@@ -33,7 +43,8 @@ Alle Requirements (Sprint 1 + 2):
 Diese wurde nanschließend in der Traceability Matrix nochmal genauer beschrieben.
 
 ### 1. Sprint Plan
-Es wird eine Erweiterung Vorgenommen, in den zwar keine Nice-To-Have Requierements drinnenstecken, aber für die Barrierefreiheit umso entscheidender sind, außerdem wird diesmal der Sicherheitsaspekt berücksichtigt, um wie gesagt, die Sicherheit zu gewähren.
+
+
 
 ---
 
@@ -61,31 +72,17 @@ Es wird eine Erweiterung Vorgenommen, in den zwar keine Nice-To-Have Requieremen
 
 Was lief nicht so gut?
 - Alle Anforderungen wurden umgesetzt
-- gute Design Diagramme führten zu fehlerfreier Code Implementierung
-- gute Nachverfolgbarkeit durch GitHub-Links, die schnelle Reproduzierbarkeit ermöglichten.
-- Die Tests wurden erfolgreich umgesetzt
-- Recherche zu beginn hat Einstieg vereinfacht
-- erfolgreich Sprint 1 geschafft
 
   
 Was nicht gut lief?
-- Zeitplan wurde nicht eingehalten
-- unnötige Schreibfehler die erst Später aufgefallen sind 
-- Schwierig von 0 anzufangen
-- Zu lange gebraucht bei den Diagrammen
-- Manuelle Testevaluation war Zeitaufwendig
-- Startpunkt hat gefehlt (ohne vorher genauen Plan zu haben)
+- Zeitplan wurde nicht eingehalten (da ich schon mit Sprint 1 zu spät war)
+
 
 Was werde ich im Nächsten Sprint anders machen
-- Mir genaue Ziele setzten was ich vorhabe und vorher einen Plan schreiben um es so gut es geht zu strukturieren
-- Mehr Zeit investieren (andere Fächer wurden vorgezogen, um den Leistungsnachweis in der mitte des Semesters zu bestehen)
-- nciht rechtzeitige Abgabe
+
   
 Lessons Learned:
-- Aufgaben Zeitfristig abgegeben um dann optimal für die Vorlesung vorbereitet zu sein
-- ich habe außerdem gelernt, dass die Vielzahl an Anforderungen keine großartige Überforderung darstellen soll
-- die richtigen Tools (Perplexity Pro) ermöglichen es, effizient zu arbeiten und ein großartigen Sprint 1 zu entwerfen
-- Leider wurde die Barrierefreiheit nicht eingehalten, also keine Lösung von blinden Personen die den Touch bildschirm erkennen können um damit die Leistungskontrolle durchzuführen (würde aber dieses Projekt einen enormen Anstieg an dem Komplex-Grad herbeiführen)
+
 
   
 
