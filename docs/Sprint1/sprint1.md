@@ -68,3 +68,10 @@ Die Implementierung endet mit dem vollständigen, versionierten Quellcode, der n
 ---
 
 ### Schritt 5: Testphase
+Nach der Implementierungsphase, in der der geplante Code aus den Design-Diagrammen vollständig ausformuliert und versioniert wurde, folgt die Testphase als entscheidender Validierungsschritt. Hier wird der Quellcode systematisch auf Funktionalität, Korrektheit und Robustheit geprüft, um Abweichungen von den ursprünglichen Anforderungen frühzeitig zu erkennen und zu beheben.​
+
+Testprozess
+Zunächst erfolgen Unit-Tests auf individuellen Methoden und Klassen, um die Logik isoliert zu validieren, gefolgt von Integrationstests, die Objektinteraktionen aus den Sequenzdiagrammen überprüfen. Ergänzt werden diese durch Systemtests auf die Gesamtfunktionalität sowie Last- und Sicherheitsprüfungen, wobei automatisierte Frameworks wie JUnit oder pytest eingesetzt werden.​
+
+Übergang zur Deployment-Phase
+Die Testphase schließt mit einem stabilen, fehlerfreien Code ab, der Berichte und Metriken liefert, bevor er in der Deployment-Phase produktiv ausgerollt wird
