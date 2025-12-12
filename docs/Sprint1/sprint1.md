@@ -58,3 +58,12 @@ Vormerkung: Der Benutzer kann entweder Lang oder Kurz den Triggern, bei einer Sp
 Das Sequenzdiagramm startet beim UIHandler der ein Interrupt auslöst, dieses vom PowerController verarbeitet wird. Das Interrupt ist eine Änderung der Leistungsstufen. Dieser PowerController gibt dem TempSensorReader den Befehl gettemperature(), dieser dann die Temperatur zurückgibt um die weitere Verarbeitung zu ermöglichen. Der PowerController stellt dann mithilfe des Temperaturwertes die Heizelemnte passend dazu ein und gibt zu guter letzt ein Update auf den Display zurück im Sinne von das ein anderer Leistungsstufenwert angezeigt wird.
 
 Das Kommunikationsdiagramm: Der Benutzer schaltet das System ein, nach dem Auslösen eines ersten Befehls Interface löst der KochfeldControlelr aus dieser dann die Heizelmente passend einstellt und startet. Falls fehler im System auftauchen sollten Überwacht die Fehlerüberwachung den KochfeldController und zeigt falls Fehler bestehen sollten dem Interface diese.
+
+
+
+### Schritt 4: Implementierung:
+Nach der Design-Phase mit Sequenzdiagrammen, Klassendiagrammen und weiteren UML-Diagrammen folgt die Implementierung als zentraler Zwischenpart, in dem die geplanten Modelle in ausführbaren Code übersetzt werden. Hier entsteht der geschriebene Quellcode schrittweise, indem Klassenstrukturen, Attribute, Methodensignaturen und Algorithmen direkt aus den Diagrammen in C++ umgesetzt werden, um Objektinteraktionen und Datenflüsse präzise zu realisieren.​
+Der Prozess beginnt mit der Deklaration der Klassen und Methoden gemäß dem Klassendiagramm, gefolgt von der Ausformulierung der Logik in Schleifen, Bedingungen und Aufrufen, die den Sequenzdiagrammen entsprechen. 
+Die Implementierung endet mit dem vollständigen, versionierten Quellcode, der nun in der Testphase auf Korrektheit, Funktionalität und Robustheit geprüft wird.
+
+### Schritt 5: Testphase
