@@ -75,10 +75,7 @@ In der Testphase werden zunächst einzelne Komponenten der Software mittels Unit
 Darauf aufbauend folgen Systemtests, bei denen das Gesamtsystem in einer möglichst realistischen Umgebung getestet wird, um typische Nutzungsszenarien, Randfälle und Fehlersituationen abzudecken. Die Ergebnisse der Tests werden dokumentiert, gefundene Fehler werden analysiert, priorisiert und in weiteren Iterationen behoben, bis ein stabiler Stand erreicht ist. Nach Abschluss der Testphase bildet dieser geprüfte Stand die Grundlage für die anschließende Review- und Retrospektiven-Phase.
 
 ### Schritt 6: Rewies und Retroperspektive
-Nach der Testphase, in der der Code auf Funktionalität, Korrektheit und Robustheit geprüft und stabilisiert wurde, folgt die Review- und Retrospektive-Phase als abschließender Qualitätsschritt. Hier werden der Quellcode und die gesamte Entwicklung durch Peer-Reviews validiert, während retrospektive Meetings den Prozess reflektieren, um Lernpotenziale für zukünftige Iterationen zu identifizieren.​
+Nach der Testphase von Sprint 1, in der der Code umfassend geprüft und stabilisiert wurde, folgt die Retrospektive als reflektierender Abschluss dieses Schritts. Hier analysiere ich den gesamten Ablauf von Design über Implementierung bis Testing, um Erfolge zu würdigen, Probleme zu identifizieren und konkrete Verbesserungen für Sprint 2 zu definieren.​
 
-Review- und Retrospektivprozess
-Zunächst führen Code-Reviews durch Kollegen detaillierte Prüfungen auf Stil, Sicherheit und Optimierung durch, oft mit Tools wie GitHub Pull Requests, ergänzt um Architektur-Reviews zur Übereinstimmung mit Design-Diagrammen. Parallel analysiert die Retrospektive in einem strukturierten Meeting Erfolge, Herausforderungen und Verbesserungsvorschläge, um den Entwicklungsworkflow kontinuierlich zu optimieren.​
 
-Übergang zur nächsten Phase
-Diese Phase endet mit genehmigtem Code und dokumentierten Erkenntnissen, die die Grundlage für Sprint 2 schaffen.
+
