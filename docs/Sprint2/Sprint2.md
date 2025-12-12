@@ -70,17 +70,17 @@ Diese wurden anschließend in der Traceability Matrix nochmal genauer beschriebe
 Was lief gut?
 - Alle Anforderungen wurden umgesetzt
 - Erfahrungen gegenüber Sprint 1 gesammelt
+- Die Implementierung der Sicherheitsfunktionen (z.B. automatische Abschaltung und zuverlässiger Timer) hat dazu geführt, dass das System in typischen Nutzungssituationen deutlich vertrauenswürdiger wirkt.
   
 Was nicht gut lief?
 - Zeitplan wurde nicht eingehalten (da ich schon mit Sprint 1 zu spät war)
 - Zeitstress
 
 Was werde ich im Nächsten Sprint anders machen
-- nichts
-  
+- eignetlich nur das es bald zuende geht und dementsprechend ist die Motivation dar
+
 Lessons Learned:
 - Erfahrungen in SCRUM
-- 
 
   
 
