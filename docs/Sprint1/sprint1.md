@@ -29,7 +29,7 @@ Sprintziel:
 
 [Design1](https://github.com/adrian29042006/Software_Engineering_Git/blob/main/docs/Sprint1/Design%201.md)
 
----
+
 Nachdem die Architektur abgeschlossen war, wurde der Sprint 1 erstellt mit den Diagrammen dazu die in Übungsaufgabe #4 gefordert waren. 
 Die Requirements die ich für diesen Sprint ausgewählt habe sind: 
 ## Requierements
@@ -52,18 +52,16 @@ Das Zustandsdiagramm mit Knopfinteraktion läuft so ab:
 Vormerkung: Der Benutzer kann entweder Lang oder Kurz den Triggern, bei einer Spanne von 0-2s löst es wie ein kurzes halten aus, ab 2 löst das lange halten aus. Auf der linken Seite ist ein Tochpad zur besseren Nachvollziehbarkeit vorhanden, die Zahl oben steht für die jeweilige Leistungsstufe.
 - Kurzes-Halten: Jedes Mal wenn der Benutzer das + klickt, geht es zur nächsten Leistungsstufe bis es bei 9 die maximale Leistungsstufe erreicht hat. Dieses fängt von 1 an, der EIN-AUS-Schalter ist ein anderes Bauteil und dieses wird nicht von + und - beeinflusst. Wenn der Benutzer - klickt geht es eine Leistungsstufe nach unten bis man auf die 1 Leistungsstufe ankommt.
 - langes-Halten: Jedes Mal wenn der Benutzer das + hält, geht es auf die Leistungsstufe 9, egal welche Leistungsstufe man vorher war, es wird sofort auf 9 gestellt. Das ermöglicht ein effizientes Handling. Falls der Benutzer lange auf - bleibt, so ist es nun umgekehrt und geht auf 1 wieder auf die niedrigste Leistungsstufe.
-
-# WICHTIG: Diese Beiden Befehle kann man kombinieren!
-
+WICHTIG: Diese Beiden Befehle kann man kombinieren!
 Das Sequenzdiagramm startet beim UIHandler der ein Interrupt auslöst, dieses vom PowerController verarbeitet wird. Das Interrupt ist eine Änderung der Leistungsstufen. Dieser PowerController gibt dem TempSensorReader den Befehl gettemperature(), dieser dann die Temperatur zurückgibt um die weitere Verarbeitung zu ermöglichen. Der PowerController stellt dann mithilfe des Temperaturwertes die Heizelemnte passend dazu ein und gibt zu guter letzt ein Update auf den Display zurück im Sinne von das ein anderer Leistungsstufenwert angezeigt wird.
 
 Das Kommunikationsdiagramm: Der Benutzer schaltet das System ein, nach dem Auslösen eines ersten Befehls Interface löst der KochfeldControlelr aus dieser dann die Heizelmente passend einstellt und startet. Falls fehler im System auftauchen sollten Überwacht die Fehlerüberwachung den KochfeldController und zeigt falls Fehler bestehen sollten dem Interface diese.
 
-
+---
 
 ### Schritt 4: Implementierung:
 Nach der Design-Phase mit Sequenzdiagrammen, Klassendiagrammen und weiteren UML-Diagrammen folgt die Implementierung als zentraler Zwischenpart, in dem die geplanten Modelle in ausführbaren Code übersetzt werden. Hier entsteht der geschriebene Quellcode schrittweise, indem Klassenstrukturen, Attribute, Methodensignaturen und Algorithmen direkt aus den Diagrammen in C++ umgesetzt werden, um Objektinteraktionen und Datenflüsse präzise zu realisieren.​
 Der Prozess beginnt mit der Deklaration der Klassen und Methoden gemäß dem Klassendiagramm, gefolgt von der Ausformulierung der Logik in Schleifen, Bedingungen und Aufrufen, die den Sequenzdiagrammen entsprechen. 
 Die Implementierung endet mit dem vollständigen, versionierten Quellcode, der nun in der Testphase auf Korrektheit, Funktionalität und Robustheit geprüft wird.
-
+---
 ### Schritt 5: Testphase
