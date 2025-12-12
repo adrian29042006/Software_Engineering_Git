@@ -79,3 +79,33 @@ Nach der Testphase von Sprint 1, in der der Code umfassend geprüft und stabilis
 
 
 
+Was lief nicht so gut?
+- Alle Anforderungen wurden umgesetzt
+- gute Design Diagramme führten zu fehlerfreier Code Implementierung
+- gute Nachverfolgbarkeit durch GitHub-Links, die schnelle Reproduzierbarkeit ermöglichten.
+- Die Tests wurden erfolgreich umgesetzt
+- Recherche zu beginn hat Einstieg vereinfacht
+- erfolgreich Sprint 1 geschafft
+
+  
+Was nicht gut lief?
+- Zeitplan wurde nicht eingehalten
+- unnötige Schreibfehler die erst Später aufgefallen sind 
+- Schwierig von 8 anzufangen
+- Zu lange gebraucht bei den Diagrammen
+- Manuelle Testevaluation war Zeitaufwendig
+- Startpunkt hat gefehlt (ohne vorher genauen Plan zu haben)
+
+Was werde ich im Nächsten Sprint anders machen
+- Mir genaue Ziele setzten was ich vorhabe und vorher einen Plan schreiben um es so gut es geht zu strukturieren
+- Mehr Zeit investieren (andere Fächer wurden vorgezogen, um den Leistungsnachweis in der mitte des Semesters zu bestehen)
+- nciht rechtzeitige Abgabe
+  
+Lessons Learned:
+- Aufgaben Zeitfristig abgegeben um dann optimal für die Vorlesung vorbereitet zu sein
+- ich habe außerdem gelernt, dass die Vielzahl an Anforderungen keine großartige Überforderung darstellen soll
+- die richtigen Tools (Perplexity Pro) ermöglichen es, effizient zu arbeiten und ein großartigen Sprint 1 zu entwerfen
+- Leider wurde die Barrierefreiheit nicht eingehalten, also keine Lösung von blinden Personen die den Touch bildschirm erkennen können um damit die Leistungskontrolle durchzuführen (würde aber dieses Projekt einen enormen Anstieg an dem Komplex-Grad herbeiführen)
+
+  
+
