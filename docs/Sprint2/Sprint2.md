@@ -47,39 +47,40 @@ Diese wurden anschließend in der Traceability Matrix nochmal genauer beschriebe
 
 ### Schritt 2: Architektur
 
-[Architektur](../Sprint2/Architektur2.md)
+[Architektur2](../Sprint2/Architektur2.md)
 
 ---
 
 ### Schritt 3: Design
 
-[Design1](https://github.com/adrian29042006/Software_Engineering_Git/blob/main/docs/Sprint2/Design2.md)
+[Design2](https://github.com/adrian29042006/Software_Engineering_Git/blob/main/docs/Sprint2/Design2.md)
 
 ---
 
 
 ### Schritt 5: Testphase
 
-[Test1](https://github.com/adrian29042006/Software_Engineering_Git/blob/main/docs/Sprint2/Test1.md )
+[Test2](https://github.com/adrian29042006/Software_Engineering_Git/blob/main/docs/Sprint2/Test2.md )
 
 ---
 
 ### Schritt 6: Rewies und Retroperspektive
 
 
-Was lief nicht so gut?
+Was lief gut?
 - Alle Anforderungen wurden umgesetzt
-
+- Erfahrungen gegenüber Sprint 1 gesammelt
   
 Was nicht gut lief?
 - Zeitplan wurde nicht eingehalten (da ich schon mit Sprint 1 zu spät war)
-
+- Zeitstress
 
 Was werde ich im Nächsten Sprint anders machen
-
+- nichts
   
 Lessons Learned:
-
+- Erfahrungen in SCRUM
+- 
 
   
 
