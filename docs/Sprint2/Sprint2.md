@@ -47,20 +47,20 @@ Diese wurden anschließend in der Traceability Matrix nochmal genauer beschriebe
 
 ### Schritt 2: Architektur
 
-[Architektur](Architektur1.md)
+[Architektur](../Sprint2/Architektur2.md)
 
 ---
 
 ### Schritt 3: Design
 
-[Design1](https://github.com/adrian29042006/Software_Engineering_Git/blob/main/docs/Sprint1/Design%201.md)
+[Design1](https://github.com/adrian29042006/Software_Engineering_Git/blob/main/docs/Sprint2/Design2.md)
 
 ---
 
 
 ### Schritt 5: Testphase
 
-[Test1](https://github.com/adrian29042006/Software_Engineering_Git/blob/main/docs/Sprint1/Test1.md )
+[Test1](https://github.com/adrian29042006/Software_Engineering_Git/blob/main/docs/Sprint2/Test1.md )
 
 ---
 
