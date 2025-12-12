@@ -91,7 +91,7 @@ Was lief nicht so gut?
 Was nicht gut lief?
 - Zeitplan wurde nicht eingehalten
 - unnötige Schreibfehler die erst Später aufgefallen sind 
-- Schwierig von 8 anzufangen
+- Schwierig von 0 anzufangen
 - Zu lange gebraucht bei den Diagrammen
 - Manuelle Testevaluation war Zeitaufwendig
 - Startpunkt hat gefehlt (ohne vorher genauen Plan zu haben)
