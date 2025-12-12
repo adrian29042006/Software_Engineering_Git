@@ -19,13 +19,12 @@ Sprintziel:
 1. Hardwarekomponenten
 2. User Interface
 3. Logik
-
+---
 ### Schritt 2: Architektur
 
 [Architektur](Architektur1.md)
-
-### Schritt 3: Design
 ---
+### Schritt 3: Design
 
 [Design1](https://github.com/adrian29042006/Software_Engineering_Git/blob/main/docs/Sprint1/Design%201.md)
 
@@ -63,5 +62,7 @@ Das Kommunikationsdiagramm: Der Benutzer schaltet das System ein, nach dem Ausl�
 Nach der Design-Phase mit Sequenzdiagrammen, Klassendiagrammen und weiteren UML-Diagrammen folgt die Implementierung als zentraler Zwischenpart, in dem die geplanten Modelle in ausführbaren Code übersetzt werden. Hier entsteht der geschriebene Quellcode schrittweise, indem Klassenstrukturen, Attribute, Methodensignaturen und Algorithmen direkt aus den Diagrammen in C++ umgesetzt werden, um Objektinteraktionen und Datenflüsse präzise zu realisieren.​
 Der Prozess beginnt mit der Deklaration der Klassen und Methoden gemäß dem Klassendiagramm, gefolgt von der Ausformulierung der Logik in Schleifen, Bedingungen und Aufrufen, die den Sequenzdiagrammen entsprechen. 
 Die Implementierung endet mit dem vollständigen, versionierten Quellcode, der nun in der Testphase auf Korrektheit, Funktionalität und Robustheit geprüft wird.
+
 ---
+
 ### Schritt 5: Testphase
