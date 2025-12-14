@@ -13,7 +13,7 @@ enum class CookState { Idle, Cooking, PowerBoost, TimedCooking };
 struct TempSensor {
     double currentTemp = 25.0;
     void   update(double power) {
-        currentTemp += power * 0.1;  // sehr vereinfachtes Modell
+        currentTemp += power * 0.1; 
     }
 };
 
