@@ -1,151 +1,180 @@
 #include <iostream>
-using namespace std;
+#include <chrono>
+#include <thread>
+#include <optional>
 
-// =====================================================
-// BENUTZER
-// =====================================================
-class Benutzer {
-private:
-    string name;
-    int alter;
-    bool EIN_AUS_SCHALTER = false;
+using namespace std::chrono;
 
-public:
-    Benutzer(string n, int a) : name(n), alter(a) {}
+enum class PowerLevel { Off = 0, L1, L2, L3, L4, L5, L6, L7, L8, L9 };
+enum class UiEvent   { None, TouchLevel, KnobLevel, ButtonLevel,
+                       ButtonOnOff, ButtonP, TimerSet };
+enum class CookState { Idle, Cooking, PowerBoost, TimedCooking };
 
-    void anzeigen() {
-        cout << "Name: " << name << ", Alter: " << alter << endl;
-    }
-
-    void schalterUmlegen() {
-        EIN_AUS_SCHALTER = !EIN_AUS_SCHALTER;
-        cout << "Schalter ist jetzt " 
-             << (EIN_AUS_SCHALTER ? "AN" : "AUS") << endl;
-    }
-
-    bool istAn() const {
-        return EIN_AUS_SCHALTER;
+struct TempSensor {
+    double currentTemp = 25.0;
+    void   update(double power) {
+        currentTemp += power * 0.1;  // sehr vereinfachtes Modell
     }
 };
 
-// =====================================================
-// TEMPERATURREGLER (0–9 Stufen)
-// =====================================================
-class Temperaturregler {
-private:
-    int stufe = 0;
+struct PowerController {
+    PowerLevel level      = PowerLevel::Off;
+    bool       isOn       = false;
+    bool       coilActive = false;
 
-public:
-    void setStufe(int neueStufe) {
-        if (neueStufe < 0) neueStufe = 0;
-        if (neueStufe > 9) neueStufe = 9;
-        stufe = neueStufe;
-
-        cout << "[Temperaturregler] Stufe gesetzt auf: " << stufe << endl;
+    void setLevel(PowerLevel l) {
+        level      = l;
+        coilActive = (l != PowerLevel::Off) && isOn;
     }
 
-    int getStufe() const {
-        return stufe;
-    }
-};
-
-// =====================================================
-// INDUKTIONS-SPULE (Leistung vom PowerController)
-// =====================================================
-class Induktionsspule {
-private:
-    int aktuelleLeistung = 0;
-
-public:
-    void setLeistung(int watt) {
-        aktuelleLeistung = watt;
-        cout << "[Induktionsspule] Heizleistung: "<< aktuelleLeistung << " W\n";
+    void setOn(bool on) {
+        isOn       = on;
+        coilActive = (level != PowerLevel::Off) && isOn;
     }
 
-    int getLeistung() const {
-        return aktuelleLeistung;
+    double currentPower() const {
+        return static_cast<int>(level);   // 0–9 als „Leistungsstufen“
     }
 };
 
-// =====================================================
-// POWER CONTROLLER — steuert Induktionsspule direkt
-// =====================================================
-class PowerController {
-private:
-    bool powerState = false;
+struct TimerController {
+    std::optional<minutes> remaining;
+    time_point<steady_clock> lastTick = steady_clock::now();
 
-    // feste 9 Leistungsstufen
-    int leistungsTabelle[10] = {
-        0,    // Stufe 0
-        200,  // Stufe 1
-        400,  // Stufe 2
-        600,  // Stufe 3
-        800,  // Stufe 4
-        1000, // Stufe 5
-        1200, // Stufe 6
-        1500, // Stufe 7
-        1800, // Stufe 8
-        2100  // Stufe 9
-    };
+    void start(minutes m) { remaining = m; lastTick = steady_clock::now(); }
+    void clear()          { remaining.reset(); }
 
-public:
-    void setPowerState(bool state) {
-        powerState = state;
-    }
-
-    // HIER PASSIERT DIE WICHTIGE STELLUNGNAHME:
-    // PowerController wählt die Leistung aus UND gibt sie der Spule
-    void steuereSpule(Induktionsspule &coil, int stufe) {
-        if (!powerState) {
-            coil.setLeistung(0);
-            return;
+    // reagiert mit ≤ 500 ms Verzögerung (modelliert durch Aufruffrequenz im main‑Loop)
+    bool tick() {
+        if (!remaining) return false;
+        auto now  = steady_clock::now();
+        auto diff = duration_cast<seconds>(now - lastTick);
+        if (diff.count() >= 1) {
+            lastTick = now;
+            if (*remaining > minutes(0))
+                *remaining -= minutes(1);
         }
-
-        int leistung = leistungsTabelle[stufe];
-        coil.setLeistung(leistung);
+        return remaining && *remaining <= minutes(0);
     }
 };
 
-// =====================================================
-// LED
-// =====================================================
-class LED {
-public:
-    void zeigeStufe(int stufe) {
-        cout << "[LED] Anzeige Stufe: " << stufe << endl;
+struct UIHandler {
+    bool   ledOnOff   = false;
+    bool   ledP       = false;
+    int    shownLevel = 0;
+    int    shownTime  = 0;
+
+    void showLevel(PowerLevel lvl) {
+        shownLevel = static_cast<int>(lvl);
+    }
+
+    void showTimer(minutes m) {
+        shownTime = static_cast<int>(m.count());
+    }
+
+    void setOnOffState(bool on) {
+        ledOnOff = on;
+    }
+
+    void setPState(bool active) {
+        ledP = active;
     }
 };
 
-// =====================================================
-// HAUPTPROGRAMM
-// =====================================================
+// Gesamtsystem
+struct CooktopController {
+    CookState       state   = CookState::Idle;
+    PowerController power;
+    TimerController timer;
+    TempSensor      temp;
+    UIHandler       ui;
+
+    // Reaktionszeit ≤ 100 ms für Leistungsstufen:
+    void handleLevelInput(int level) {
+        if (level < 0) level = 0;
+        if (level > 9) level = 9;
+        power.setLevel(static_cast<PowerLevel>(level));
+        ui.showLevel(power.level);
+    }
+
+    void handleOnOff() {
+        bool newState = !power.isOn;
+        power.setOn(newState);
+        ui.setOnOffState(newState);
+        if (!newState) {
+            state = CookState::Idle;
+            power.setLevel(PowerLevel::Off);
+            timer.clear();
+            ui.setPState(false);
+        }
+    }
+
+    // Taste „P“: 10 Minuten Boost, dann Auto‑Off der Funktion
+    void handlePowerBoost() {
+        if (!power.isOn) return;
+        if (state != CookState::PowerBoost) {
+            state = CookState::PowerBoost;
+            power.setLevel(PowerLevel::L9);
+            timer.start(minutes(10));
+            ui.setPState(true);
+        }
+    }
+
+    // Einstellbare Kochzeit 1–20 Minuten
+    void handleTimerSet(int minutesSet) {
+        if (!power.isOn) return;
+        if (minutesSet < 1)  minutesSet = 1;
+        if (minutesSet > 20) minutesSet = 20;
+        timer.start(minutes(minutesSet));
+        ui.showTimer(minutes(minutesSet));
+        state = CookState::TimedCooking;
+    }
+
+    // Zyklischer Aufruf (z.B. alle 50–100 ms in Main‑Loop)
+    void update() {
+        if (!power.isOn) return;
+
+        // Temperaturüberwachung
+        temp.update(power.currentPower());
+
+        bool timerElapsed = timer.tick();
+        if (timerElapsed) {
+            // Abschalten der Kochzone bei abgelaufenem Timer
+            power.setLevel(PowerLevel::Off);
+            ui.showLevel(PowerLevel::Off);
+            ui.setPState(false);
+
+            if (state == CookState::PowerBoost || state == CookState::TimedCooking)
+                state = CookState::Idle;
+
+            timer.clear();
+        }
+    }
+};
+
 int main() {
-    Benutzer benutzer("Max", 25);
-    Temperaturregler regler;
-    PowerController controller;
-    Induktionsspule spule;
-    LED led;
+    CooktopController ctl;
 
-    benutzer.anzeigen();
-    benutzer.schalterUmlegen();                 // Gerät an
-    controller.setPowerState(benutzer.istAn());
+    // Einfacher Testablauf: Ein, Leistungsstufe 5, Timer 3 min, Boost
+    ctl.handleOnOff();          // Ein-/Aus-Schalter
+    ctl.handleLevelInput(5);    // Leistungsstufe
+    ctl.handleTimerSet(3);      // Kochzeit 3 Minuten
 
-    // Stufe 6 setzen
-    regler.setStufe(6);
-    led.zeigeStufe(regler.getStufe());
+    for (int i = 0; i < 5; ++i) {
+        ctl.update();
+        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+    }
 
-    // PowerController steuert Spule
-    controller.steuereSpule(spule, regler.getStufe());
+    ctl.handlePowerBoost();     // Taste „P“
 
-    // Stufe 9 setzen
-    regler.setStufe(9);
-    led.zeigeStufe(regler.getStufe());
-    controller.steuereSpule(spule, regler.getStufe());
+    // „Laufe“ 11 Minuten im schnellen Simulationsmodus
+    for (int i = 0; i < 11 * 10; ++i) { // 10 Updates pro „Minute“
+        ctl.update();
+        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+    }
 
-    // Gerät AUS
-    benutzer.schalterUmlegen();
-    controller.setPowerState(benutzer.istAn());
-    controller.steuereSpule(spule, regler.getStufe());
-
-    return 0;
+    std::cout << "OnOff LED: "   << ctl.ui.ledOnOff
+              << ", P LED: "     << ctl.ui.ledP
+              << ", Level: "     << ctl.ui.shownLevel
+              << ", Timer: "     << ctl.ui.shownTime << " min\n";
 }
