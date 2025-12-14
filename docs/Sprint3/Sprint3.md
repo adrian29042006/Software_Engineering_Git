@@ -64,7 +64,6 @@ Testfall 5: „Sensor + Kochfeldsteuerung Ausfall Sensor“
 Testfall 6: „Sensor + Kochfeldsteuerung Grenzwerttemperatur“
 → R3.1 (Überwachung) + R1.1 (Leistungsregelung) + R2.5/R5.3 (kein Überschreiten, ggf. Abschalten).
 
-[Test3](https://github.com/adrian29042006/Software_Engineering_Git/blob/main/docs/Sprint1/Test3.md )
 
 ---
 
