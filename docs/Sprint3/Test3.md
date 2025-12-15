@@ -1,3 +1,26 @@
+## Zuordnung der Testfälle von den Requierements:
+| Requirement | Inhalt (kurz)                                   | Verifizierende Testfälle |
+|------------|--------------------------------------------------|---------------------------|
+| R3.1       | Temperatur in der Pfanne wird kontinuierlich überwacht | TF1, TF2, TF3, TF4, TF5, TF6 |
+| R1.1       | 9 Leistungsstufen                               | TF4, TF6 |
+| R1.2       | Auswahl Leistungsstufe (Touch/Drehknopf/Tasten) | TF4, TF6 |
+| R4.1       | Ein-/Aus‑Schalter                               | TF1, TF2, TF3, TF4, TF5, TF6 |
+| R5.1       | Einstellbare Kochzeit 1–20 min                  | TF4, TF6 |
+| R5.3       | Zeit zählt runter, Kochzone schaltet ab         | TF6 |
+| R1.3       | Reaktionszeit ≤ 100 ms                          | TF4, TF6 |
+| R1.4       | Funktion bei verschmutzten Fingern              | – |
+| R1.5       | LED‑Lebensdauer ≥ 500 h                         | – |
+| R2.1       | Taste „P“ klar erkennbar                        | – |
+| R2.2       | Zustand Ein/Aus sichtbar                        | TF5, TF6 |
+| R2.3       | Reaktionszeit Taste ≤ 500 ms                    | – |
+| R2.4       | Taste „P“ unterscheidet sich                    | – |
+| R3.2       | Anzeigeverzögerung ≤ 500 ms                     | TF1, TF2, TF4, TF6 |
+| R4.2       | Schalter ≥ 100000 Betätigungen                  | – |
+| R5.2       | Timeranzeige Verzögerung ≤ 500 ms               | TF4, TF6 |
+
+
+
+
 # Testfälle auf Modulebene
 
 ***Testfall 1: Sensorwert innerhalb normaler Temperatur***
