@@ -15,6 +15,8 @@ Prüfen, dass Leistungsstufe, Betriebszustand (Ein/Aus, Topf erkannt, Restwärme
 - Ein-/Ausschaltung (R4.1):
 Validieren, dass Ein-/Ausschalttaste zuverlässig funktioniert, nach Stromausfall nicht automatisch einschaltet und im Sperrmodus noch abschalten kann.
 
+--- 
+
 ## 2. Testarten und Abdeckung
 
 ## 2.1 Unit‑Test (Komponenten-/Modultest)
@@ -53,57 +55,57 @@ Validieren, dass Ein-/Ausschalttaste zuverlässig funktioniert, nach Stromausfal
 - **Ein‑/Ausschaltung (R4.1)**  
   System lässt sich zuverlässig ein‑/ausschalten, bleibt nach Stromausfall aus und kann im Sperrmodus noch abgeschaltet werden.
 
+---
+## 3. Teststrategie
+### Automatisierte Tests
 
+- Unit‑Tests für Temperaturmessung (Sensorik), Leistungsstufen und UI‑Logik werden automatisiert (z. B. mit Testframework).  
+- Laufen in der CI‑Pipeline bei jedem Commit, um schnelle Rückmeldung zu geben.
 
+### Manuelle Tests
 
+- Usability‑Tests: Bedienung (Tasten/Drehknopf/Touch), Lesbarkeit der Anzeige, Ein‑/Ausschaltung.  
+- Systemtests: Verhalten bei Topfwechsel, Fehlerfälle, Restwärme, Kindersicherung.
 
+### Iterative Tests
 
+- Nach jeder Inkrementierung (neue Regelung, UI‑Änderung) werden Unit‑ und Systemtests erneut ausgeführt.  
+- Sicherstellung, dass neue Funktionen korrekt integriert sind und Fehler früh erkannt werden.
 
+### Regressionstests
 
-
-
-
-
-
-# Testfälle auf Modulebene
-
-***Testfall 1: Sensorwert innerhalb normaler Temperatur***
-  - Vorbedinung: Sensor ist kalibriert, Kochfeld ist eingeschaltet, Temerpatur auf 100°C eingestellt.
-  - Aktion: Sensor liest aktuellen Temperaturwert
-  - Erwartetes Ergebnis: Sensorwert soll mit maximal 3°C Abweichung den Sollwert ensprechen
- -  Nachbedingung: Sensor leifert korrekte Werte, Kochfeld reagiert normal auf Steuerung
-
-***Testfall 2: Sensorwert außerhalb Grenzbereich***
-- Vorbedingung: Sensor ist kalibriert, Kochfeld eingeschaltet, Extremteperatur 300°C simuliert
-- Aktion: Sensor liest aktuellen Temperaturwert
-- Erwartetes Ergebnis: Sensor meldet Fehlercode
-- Nachbedingung; Kochfeld schaltet ggf. ab, Sicherheitsprotokoll aktiviert
-
-***Testfall 3: Sensor liefert fehlerhafte Werte(Simulaiton von HW-Fehler)***
-- Vorbedingung: Sensor simuliert Ausfall(Kommunikation wurde unterbrochen)
-- Aktion: Sensor liest Temperatur
-- Erwartetes Ergebnis: Sensor meldet Fehler, keine Falschen Temperaturen an Steuerung
-- Nachbedingung: Kochfeld geht in Sicherheitsmodus
-
+- Definiertes Set kritischer Systemtests (Leistungsstufen, Temperaturstabilität, Statusanzeigen, Ein‑/Ausschaltung) wird regelmäßig wiederholt.  
+- Ziel: Bestehende Funktionen bleiben stabil, auch nach Codeänderungen.
 
 ---
 
-# Testfälle auf Integrationsebene
+## 4. Testumfang
 
-***Testfall 4: Sensor + Kochfeldsteuerung normale Kommunikation***
-  - Vorbedingung: Sensor ist kalibriert, Steuerung des Kochfeldes ist aktiv
-  - Aktion: Steuerung fragt Temperatur ab, Steuerung passt Heizleistung an
-  - Erwartetes Ergebnis: Temperatur korrekt an Steuerung übertragen, Heizleistng angepasst
-  - Nachbedingung: Kochfeld reagiert korrekt auf aktuellen Temperatur
+### In Scope
 
-***Testfall 5: Sensor + Kochfeldsteuerung Ausfall Sensor***
-  - Vorbedingung: Sensor fällt während Betrieb aus
-  - Aktion: Steuerung fordert Temperaturwert an
-  - Erwartetes Ergebnis: Steuerung erkennt Kommunikationsfehler, gibt Fehler aus
-  - Nachbedingung: Kochfeld schaltet ggf. in Sicherheitsmodus, Warnmeldung angezeigt
+- Temperaturmessung mit Sensorik (R3.1)  
+  Prüfung der Temperaturerfassung bei verschiedenen Lasten (leer, Wasser, Öl) und Topfpositionen/Materialien.
 
-***Testfall 6: Sensor + Kochfeldsteuerung Grenzwerttemperatur***
-  - Vorbedinung: Kochfeld auf maximale Temperatur eingestellt(z.b. 300°C). Sensor ist aktiv
-  - Aktion: Steuerung liest Sensorwert, prüft Soll/ist-Differenz
-  - Erwartetes Ergebnis: Steuerung begrenz Heizleistung, überschreitet max. Temperatur nicht
-  - Nachbedingung: Kochfeld erreicht max. Temperatur, überschreitet Sicherheitsgrenze nicht
+- Grundsteuerung der Leistungsstufen (R1.1, R1.2)  
+  Funktion und Zuordnung der Leistungsstufen, Rampen beim Hoch-/Herunterschalten, Min-/Max‑Verhalten.
+
+- UI‑Basisfunktionen (Tasten/Drehknopf/Touch)  
+  Zuverlässige Eingabe, korrekte Zuordnung zur Leistungsstufe, Funktion im Sperrmodus.
+
+- Reaktionszeit der UI (R1.3, R2.3)  
+  Reaktionszeit auf Eingaben und Zustandsänderungen (z. B. Topf erkannt/verloren).
+
+- Sichtbare Statusanzeige (R2.2)  
+  Anzeige von Leistungsstufe, Betriebszustand (Ein/Aus, Topf erkannt, Restwärme, Fehler) und Lesbarkeit.
+
+- Ein‑/Ausschaltung des Kochfelds (R4.1)  
+  Funktion der Ein‑/Ausschalttaste, Verhalten nach Stromausfall und im Sperrmodus.
+
+### Out of Scope
+
+- Energieeffizienz‑Messungen (z. B. kWh‑Verbrauch pro Kochvorgang).  
+- Langzeitstabilität über mehrere Monate oder 1000+ Betriebsstunden.  
+- Funktion mit nicht induktionsfähigen Kochgeschirr (z. B. Aluminium, Glas).  
+- Netzwerkkommunikation, App‑Steuerung oder Cloud‑Funktionen.  
+- Mechanische Haltbarkeit (z. B. Kratzer, Tropffestigkeit, Reinigung).  
+- EMV‑ und Sicherheitszertifizierungen (z. B. CE, EMC, Überhitzungsschutz nach Norm).
