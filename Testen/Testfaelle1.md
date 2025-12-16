@@ -51,7 +51,7 @@
 
 - **Ausgangszustand:**
   - Gerät = EIN
-  - Leistungsstufe = 3
+  - Leistungsstufe = 3 //als beispiel genommen, es kann natürlich auch ein anderer wert zwischen 1-8 sein
 
 - **Ereignis:**  
   - Kurzes Drücken der „+“-Taste
@@ -60,7 +60,7 @@
   - ButtonInput = „+“
 
 - **Erwartete Reaktion:**
-  - Leistungsstufe = 4
+  - Leistungsstufe = 4 
   - Reaktionszeit ≤ 100 ms
 
 - **Klasse:** UIHandler  
@@ -75,11 +75,11 @@
 
 - **Ausgangszustand:**
   - Gerät = EIN
-  - Leistungsstufe = 5
+  - Leistungsstufe = 5 //wieder ein x möglicher wert
   - Topf mit Wasser
 
 - **Eingabe:**
-  - Sensorwert = 78 °C
+  - Sensorwert = 78 °C // eine genaue Temperatureingabe
 
 - **Erwartete Reaktion:**
   - Korrekte Übernahme des Temperaturwertes
@@ -101,7 +101,7 @@
 
 - **Ausgangszustand:**
   - Gerät = EIN
-  - Leistungsstufe = 2
+  - Leistungsstufe = 2 //genau das gleiche
 
 - **Ereignis:**  
   - Benutzer drückt „+“
@@ -129,19 +129,19 @@
   Sicherstellen, dass das System zuverlässig ein- und ausgeschaltet werden kann.
 
 - **Ausgangszustand:**
-  - Gerät = AUS
+  - Gerät = AUS //im falle beim Auschalten: Gerät = EIN
 
 - **Ereignis:**  
   - Benutzer drückt Ein-/Aus-Taste
 
 - **Erwartete Reaktion:**
-  - System startet
+  - System startet                //Heizleistung und Anzeigen schaltet sich aus -> System fährt herunter 
   - Anzeige aktiviert sich
   - Heizleistung bleibt aus
 
 - **Erwarteter Folgezustand:**
-  - Gerät = EIN
-  - Leistungsstufe = 0
+  - Gerät = EIN                //AUS
+  - Leistungsstufe = 1         
 
 - **Requirement:** R4.1, R2.2
 
@@ -168,3 +168,5 @@
 - **Requirement:** R3.1, R2.2
 
 ***
+
+- die Kommentare erklären das geschehen und ergänzen gegebenenfalls die ALlternative, sind aber vorrangig unwichtig, sinnvoll in den weiteren Sprint damit zu arbeiten
