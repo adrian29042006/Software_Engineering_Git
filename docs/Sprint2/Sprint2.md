@@ -58,13 +58,13 @@ Diese wurden anschließend in der Traceability Matrix nochmal genauer beschriebe
 ---
 
 
-### Schritt 5: Testphase
+### Schritt 4: Testphase
 
 [Test2](https://github.com/adrian29042006/Software_Engineering_Git/blob/main/docs/Sprint2/Test2.md )
 
 ---
 
-### Schritt 6: Rewies und Retroperspektive
+### Schritt 5: Rewies und Retroperspektive
 
 
 Was lief gut?
