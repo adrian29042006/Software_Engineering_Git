@@ -4,7 +4,7 @@
 
 ## Projektinformationen
 
-- **Projekt:** Induktionskochfeld
+- **Projekt:** Temperatursensor beim Induktionskochfeld
 - **Sprint:** 1
 - **Abgedeckte Requirements:** R1.1, R1.2, R1.3, R2.2, R2.3, R3.1, R4.1
 
