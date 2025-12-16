@@ -4,10 +4,10 @@
 
 | Testfall | Status | Bemerkung |
 |----------|--------|-----------|
-| UT1 | ✅ Bestanden | Eingaben bei verschmutzten Fingern wurden zuverlässig erkannt, Leistungsstufe korrekt angepasst |
-| UT2 | ✅ Bestanden | LED-Anzeige blieb ≥ 500 h stabil ohne Helligkeitsminderung |
-| UT3 | ✅ Bestanden | Timerfunktion deaktivierte Kochzone nach 10 Minuten zuverlässig |
-| UT4 | ✅ Bestanden | Ein-/Ausschalter überstand 100.000 Betätigungen ohne Defekt |
+| UT4 | ✅ Bestanden | Eingaben bei verschmutzten Fingern wurden zuverlässig erkannt, Leistungsstufe korrekt angepasst |
+| UT5 | ✅ Bestanden | LED-Anzeige blieb ≥ 500 h stabil ohne Helligkeitsminderung |
+| UT6 | ✅ Bestanden | Timerfunktion deaktivierte Kochzone nach 10 Minuten zuverlässig |
+| UT7 | ✅ Bestanden | Ein-/Ausschalter überstand 100.000 Betätigungen ohne Defekt |
 
 ---
 
@@ -15,9 +15,9 @@
 
 | Testfall | Status | Bemerkung |
 |----------|--------|-----------|
-| IT1 | ✅ Bestanden | UI + verschmutzte Finger: Leistungsstufe korrekt erhöht, Display synchron |
-| IT2 | ✅ Bestanden | Timer + Selbstabschaltung: Kochzone abgeschaltet, Funktion deaktiviert, Display korrekt |
-| IT3 | ✅ Bestanden | Ein-/Ausschaltung + Belastungstest: Schalter funktionierte zuverlässig über 100.000 Vorgänge |
+| IT4 | ✅ Bestanden | UI + verschmutzte Finger: Leistungsstufe korrekt erhöht, Display synchron |
+| IT5 | ✅ Bestanden | Timer + Selbstabschaltung: Kochzone abgeschaltet, Funktion deaktiviert, Display korrekt |
+| IT6 | ✅ Bestanden | Ein-/Ausschaltung + Belastungstest: Schalter funktionierte zuverlässig über 100.000 Vorgänge |
 
 ---
 
