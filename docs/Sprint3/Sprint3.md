@@ -39,11 +39,11 @@ Diese wurden anschließend in der Traceability Matrix nochmal genauer beschriebe
 ---
 
 
-### Schritt 5: Testphase
+### Schritt 4: Testphase
 [Testen](../../Testen)
 ---
 
-### Schritt 6: Rewies und Retroperspektive
+### Schritt 5: Rewies und Retroperspektive
 
 
 Was lief gut?
