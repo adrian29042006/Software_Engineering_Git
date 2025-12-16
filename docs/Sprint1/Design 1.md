@@ -40,6 +40,33 @@ Umfang:
 
 <img width="1920" height="1080" alt="Benutzer (2)" src="https://github.com/user-attachments/assets/72a17f76-2952-4ef4-9635-94c11f90f5a8" />
 
+---
+
+Schnittstellenübersicht Induktionskochfeld:
+
+1. UI <-> PowerController
+   - Steuerung der Leistungsstufen
+   - Ein-/Aus-Funktion
+   - Timersteuerung
+
+2. PowerController <-> Heizelemente
+   - Schalten der Kochzone
+   - Temperaturregelung
+
+3. UI <-> LED
+   - Anzeige von Leistungsstufen, Sonderfunktionen, Timerzustand
+
+4. TempSensor <-> PowerController
+   - Temperaturüberwachung
+
+5. TimerController <-> PowerController
+   - Automatisches Abschalten nach Ablauf der Zeit
+
+6. UI <-> Touchcontroller
+   - Touch-Eingaben für Bedienung und Timer
+
+7. TimerController <-> Heizelemente
+   - Timer-basiertes Abschalten der Kochzone
 
 
 
