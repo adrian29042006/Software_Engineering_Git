@@ -104,7 +104,7 @@ Was nicht gut lief?
 Was werde ich im Nächsten Sprint anders machen
 - Mir genaue Ziele setzten was ich vorhabe und vorher einen Plan schreiben um es so gut es geht zu strukturieren
 - Mehr Zeit investieren (andere Fächer wurden vorgezogen, um den Leistungsnachweis in der mitte des Semesters zu bestehen)
-- nciht rechtzeitige Abgabe
+- nicht rechtzeitige Abgabe
   
 Lessons Learned:
 - Aufgaben Zeitfristig abgegeben um dann optimal für die Vorlesung vorbereitet zu sein
