@@ -6,7 +6,7 @@
 
 - **Projekt:** Induktionskochfeld
 - **Sprint:** 2
-- **Abgedeckte Requirements:** R1.1, R1.2, R1.4, R1.5, R2.2, R2.4, R2.5, R3.1, R4.1, R4.2, R5.3
+- **Abgedeckte Requirements:** R1.4, R1.5, R2.4, R2.5, R4.2, R5.3
 
 ***
 
@@ -14,68 +14,96 @@
 
 ***
 
-### UT4 – Temperaturmessung: stabiler Wert (R3.1)
+### UT1 – UI-Reaktion bei verschmutzten Fingern (R1.4)
 
 - **Ziel:**  
-  Prüfen, ob der Temperatursensor unter verschiedenen Bedingungen korrekte und stabile Werte liefert.
-
-- **Ausgangszustand:**
-  - Gerät = EIN
-  - Leistungsstufe = 5
-  - Topf mit Wasser
-
-- **Eingabe:**
-  - Sensorwert = 80 °C
-
-- **Erwartete Reaktion:**
-  - Temperaturwert korrekt übernommen
-  - Keine Sprünge oder Ausreißer
-
-- **Klasse:** TempSensorReader  
-- **Requirement:** R3.1
-
-***
-
-### UT5 – UI-Reaktion bei verschmutzten Fingern (R1.4)
-
-- **Ziel:**  
-  Eingaben werden auch bei leicht verschmutzten Fingern korrekt erkannt.
+  Sicherstellen, dass Tasten/Touch auch bei leicht verschmutzten Fingern (Fett, Mehl) korrekt reagieren.
 
 - **Ausgangszustand:**
   - Gerät = EIN
   - Leistungsstufe = 3
 
+- **Ereignis:**  
+  - Kurzes Drücken der „+“-Taste bei verschmutzten Fingern
+
 - **Eingabe:**
-  - ButtonInput = „+“ mit fettiger/mehliger Hand
+  - ButtonInput = „+“
 
 - **Erwartete Reaktion:**
-  - Leistungsstufe erhöht sich korrekt
-  - Reaktionszeit ≤ 100 ms
+  - Leistungsstufe erhöht sich auf 4
+  - Eingabe wird zuverlässig erkannt
 
 - **Klasse:** UIHandler  
 - **Requirement:** R1.4
 
 ***
 
-### UT6 – Timer mit Selbstabschaltung (R2.5, R5.3)
+### UT2 – Lebensdauer LED-Anzeige (R1.5)
 
 - **Ziel:**  
-  Verifikation der zeitbasierten Abschaltung nach 10 Minuten.
+  Prüfen, ob LED-Anzeige ≥ 500 h ohne merkliche Helligkeitsminderung leuchtet.
 
 - **Ausgangszustand:**
   - Gerät = EIN
-  - Funktion „Boost“ gestartet
-  - Timer = 10 Minuten
+  - Display = aktiv
 
-- **Eingabe:**  
-  - Timer läuft ab
+- **Ereignis:**  
+  - Dauerbetrieb simulieren (500 h äquivalent in Testsimulation)
+
+- **Erwartete Reaktion:**
+  - LED bleibt stabil und leuchtet konstant
+  - Keine Ausfälle oder Helligkeitsminderungen
+
+- **Klasse:** LED_Display  
+- **Requirement:** R1.5
+
+***
+
+### UT3 – Timer mit Selbstabschaltung (R2.5, R5.3)
+
+- **Ziel:**  
+  Timer läuft 10 Minuten und deaktiviert Kochzone selbstständig.
+
+- **Ausgangszustand:**
+  - Gerät = EIN
+  - Boost-Funktion = aktiv
+
+- **Ereignis:**  
+  - Timer startet
+
+- **Eingabe:**
+  - Timer läuft auf 0 Minuten herunter
 
 - **Erwartete Reaktion:**
   - Kochzone wird abgeschaltet
-  - Funktion deaktiviert sich automatisch
+  - Display zeigt abgeschalteten Status
+  - Funktion deaktiviert sich selbstständig
 
-- **Klasse:** PowerController / Timer  
+- **Klasse:** TimerController  
 - **Requirement:** R2.5, R5.3
+
+***
+
+### UT4 – Schalterhaltbarkeit (R4.2)
+
+- **Ziel:**  
+  Prüfen, dass Ein-/Ausschalter ≥ 100.000 Betätigungen ohne Defekt übersteht.
+
+- **Ausgangszustand:**
+  - Gerät = AUS
+
+- **Ereignis:**  
+  - Simulierte 100.000 Schaltvorgänge
+
+- **Eingabe:**
+  - PowerButton = gedrückt
+
+- **Erwartete Reaktion:**
+  - Gerät schaltet zuverlässig ein/aus
+  - Keine Fehlfunktionen
+
+- **Klasse:** PowerController  
+- **Requirement:** R4.2
 
 ***
 
@@ -83,74 +111,68 @@
 
 ***
 
-### IT4 – UI-Eingabe steuert Heizleistung inkl. verschmutzte Finger
+### IT1 – UI + verschmutzte Finger steuert Heizleistung
 
 - **Ziel:**  
-  Test des Zusammenspiels von UI, Steuerlogik und Hardware bei verschmutzten Fingern.
+  Prüfen der Interaktion zwischen UI, PowerController und Hardware bei verschmutzten Fingern.
 
 - **Ausgangszustand:**
   - Gerät = EIN
   - Leistungsstufe = 2
 
-- **Eingabe:**  
-  - ButtonInput = „+“ mit leicht verschmutzten Fingern
+- **Ereignis:**  
+  - Benutzer drückt „+“ bei leicht verschmutzten Fingern
 
 - **Erwartete Reaktion:**
-  - UI erkennt Eingabe korrekt
-  - PowerController erhöht Leistungsstufe
-  - Heizleistung passt sich an
-  - Display aktualisiert sich
+  - UI erkennt Eingabe
+  - Leistungsstufe erhöht sich auf 3
+  - Heizleistung angepasst
+  - Display korrekt aktualisiert
 
-- **Beteiligte Komponenten:**  
-  UIHandler → PowerController → HardwareAbstraction → Display
-
-- **Requirement:** R1.2, R1.4, R2.2
+- **Beteiligte Komponenten:** UIHandler → PowerController → HardwareAbstraction → Display  
+- **Requirement:** R1.4
 
 ***
 
-### IT5 – Timerfunktion + Selbstabschaltung
+### IT2 – Timerfunktion + Selbstabschaltung
 
 - **Ziel:**  
-  Prüfen des Zusammenspiels von Timer, PowerController und Anzeige bei Selbstabschaltung.
+  Test des Zusammenspiels zwischen TimerController, PowerController und Display.
 
 - **Ausgangszustand:**
   - Gerät = EIN
-  - Boost-Funktion aktiviert
-  - Timer = 10 Minuten
+  - Boost-Funktion = aktiv
 
-- **Eingabe:**  
-  - Timer läuft ab
+- **Ereignis:**  
+  - Timer läuft auf 0 Minuten herunter
 
 - **Erwartete Reaktion:**
   - Kochzone wird abgeschaltet
-  - Funktion deaktiviert sich
-  - Display zeigt korrekten Status
+  - Boost-Funktion deaktiviert sich
+  - Display zeigt abgeschalteten Status
 
-- **Beteiligte Komponenten:**  
-  Timer → PowerController → Display
-
+- **Beteiligte Komponenten:** TimerController → PowerController → Display  
 - **Requirement:** R2.5, R5.3
 
 ***
 
-### IT6 – Ein-/Ausschaltung inkl. Schalterhaltbarkeit
+### IT3 – Ein-/Ausschaltung inkl. Schalterhaltbarkeit
 
 - **Ziel:**  
-  Integrationstest für Ein-/Ausschaltung und Schalterhaltbarkeit ≥ 100.000 Betätigungen.
+  Integrationstest für Ein-/Ausschaltung und Belastungstest des Schalters.
 
 - **Ausgangszustand:**
   - Gerät = AUS
 
-- **Eingabe:**  
-  - Benutzer drückt Ein-/Aus-Taste wiederholt
+- **Ereignis:**  
+  - 100.000 simulierte Schaltvorgänge
 
 - **Erwartete Reaktion:**
-  - Gerät startet und stoppt korrekt
-  - Keine Fehlfunktionen nach ≥100.000 Betätigungen
+  - Gerät schaltet zuverlässig ein/aus
+  - Keine Fehlfunktionen oder Defekte
 
-- **Beteiligte Komponenten:**  
-  UI → PowerController → HardwareAbstraction → Display
-
-- **Requirement:** R4.1, R4.2
+- **Beteiligte Komponenten:** UIHandler → PowerController → HardwareAbstraction → Display  
+- **Requirement:** R4.2
 
 ***
+
