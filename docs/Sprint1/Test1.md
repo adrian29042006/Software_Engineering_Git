@@ -1,4 +1,5 @@
 # Test
+[Hier der Link zu Testen](../../Testen)
 
 ## 1. Ziel des Tests
 Das Ziel des Tests ist die Verifikation und Validierung des Induktionskochfeldes hinsichtlich funktionaler Korrektheit, Benutzerfreundlichkeit sowie robuster Systemrekation auf externe und interne Eingaben. Die Tests stellen sicher, dass:
