@@ -14,7 +14,7 @@
 
 ***
 
-### UT1 – UI-Reaktion bei verschmutzten Fingern (R1.4)
+### UT4 – UI-Reaktion bei verschmutzten Fingern (R1.4)
 
 - **Ziel:**  
   Sicherstellen, dass Tasten/Touch auch bei leicht verschmutzten Fingern (Fett, Mehl) korrekt reagieren.
@@ -38,7 +38,7 @@
 
 ***
 
-### UT2 – Lebensdauer LED-Anzeige (R1.5)
+### UT5 – Lebensdauer LED-Anzeige (R1.5)
 
 - **Ziel:**  
   Prüfen, ob LED-Anzeige ≥ 500 h ohne merkliche Helligkeitsminderung leuchtet.
@@ -59,7 +59,7 @@
 
 ***
 
-### UT3 – Timer mit Selbstabschaltung (R2.5, R5.3)
+### UT6 – Timer mit Selbstabschaltung (R2.5, R5.3)
 
 - **Ziel:**  
   Timer läuft 10 Minuten und deaktiviert Kochzone selbstständig.
@@ -84,7 +84,7 @@
 
 ***
 
-### UT4 – Schalterhaltbarkeit (R4.2)
+### UT7 – Schalterhaltbarkeit (R4.2)
 
 - **Ziel:**  
   Prüfen, dass Ein-/Ausschalter ≥ 100.000 Betätigungen ohne Defekt übersteht.
@@ -111,7 +111,7 @@
 
 ***
 
-### IT1 – UI + verschmutzte Finger steuert Heizleistung
+### IT4 – UI + verschmutzte Finger steuert Heizleistung
 
 - **Ziel:**  
   Prüfen der Interaktion zwischen UI, PowerController und Hardware bei verschmutzten Fingern.
@@ -134,7 +134,7 @@
 
 ***
 
-### IT2 – Timerfunktion + Selbstabschaltung
+### IT5 – Timerfunktion + Selbstabschaltung
 
 - **Ziel:**  
   Test des Zusammenspiels zwischen TimerController, PowerController und Display.
@@ -156,7 +156,7 @@
 
 ***
 
-### IT3 – Ein-/Ausschaltung inkl. Schalterhaltbarkeit
+### IT6 – Ein-/Ausschaltung inkl. Schalterhaltbarkeit
 
 - **Ziel:**  
   Integrationstest für Ein-/Ausschaltung und Belastungstest des Schalters.
