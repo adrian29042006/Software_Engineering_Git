@@ -40,31 +40,7 @@ Diese wurden anschließend in der Traceability Matrix nochmal genauer beschriebe
 
 
 ### Schritt 5: Testphase
-## Modultests (Sensor)
-Testfall 1: „Sensorwert innerhalb normaler Temperatur“
-→ R3.1 (kontinuierliche Temperaturüberwachung, Genauigkeit als Qualitätsmerkmal)​
-
-
-Testfall 2: „Sensorwert außerhalb Grenzbereich“
-→ R3.1 (Überwachung) + R2.5/R5.3 indirekt, weil ein Fehler zur Abschaltung / Sicherheitsreaktion führt, auch wenn das nicht explizit als eigenes Safety‑Requirement formuliert ist.​
-
-
-Testfall 3: „Sensor liefert fehlerhafte Werte (HW‑Fehler)“
-→ R3.1 (Überwachung der Temperaturdaten) + R2.5/R5.3 indirekt (Sicherheitsmodus/Abschaltung bei Fehler).​
-
-
-## Integrationstests (Sensor + Steuerung)
-Testfall 4: „Sensor + Kochfeldsteuerung normale Kommunikation“
-→ R3.1 (Temperaturüberwachung) + R1.1/R1.2 (Leistungsstufen einstellen und anpassen).​
-
-
-Testfall 5: „Sensor + Kochfeldsteuerung Ausfall Sensor“
-→ R3.1 (Überwachung) + R2.5/R5.3 (Abschalten/Sicherheitsverhalten bei Problem).​
-
-Testfall 6: „Sensor + Kochfeldsteuerung Grenzwerttemperatur“
-→ R3.1 (Überwachung) + R1.1 (Leistungsregelung) + R2.5/R5.3 (kein Überschreiten, ggf. Abschalten).
-
-
+[Testen](../../Testen)
 ---
 
 ### Schritt 6: Rewies und Retroperspektive
