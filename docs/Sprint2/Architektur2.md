@@ -38,7 +38,7 @@
 
 ---
 
- [★ Traceability Matrix – Induktionskochfeld](traceability_matrix.md)
+ [★ Traceability Matrix – Induktionskochfeld](../traceability_matrix.md)
 
 
 
