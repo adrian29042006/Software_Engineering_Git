@@ -4,9 +4,9 @@
 
 | Testfall | Status | Bemerkung |
 |----------|--------|-----------|
-| UT7 | ✅ Bestanden | Steuerung reagiert innerhalb ≤ 100 ms |
-| UT8 | ✅ Bestanden | UI reagiert zuverlässig innerhalb ≤ 500 ms, Leistungsstufe korrekt angepasst |
-| UT9 | ✅ Bestanden | Anzeige aktualisiert Änderungen innerhalb ≤ 500 ms |
+| UT8 | ✅ Bestanden | Steuerung reagiert innerhalb ≤ 100 ms |
+| UT9 | ✅ Bestanden | UI reagiert zuverlässig innerhalb ≤ 500 ms, Leistungsstufe korrekt angepasst |
+| UT10 | ✅ Bestanden | Anzeige aktualisiert Änderungen innerhalb ≤ 500 ms |
 
 ---
 
@@ -14,9 +14,9 @@
 
 | Testfall | Status | Bemerkung |
 |----------|--------|-----------|
-| IT4 | ✅ Bestanden | Timer korrekt einstellbar 1–20 Min, Anzeige ≤ 500 ms |
-| IT5 | ✅ Bestanden | Steuerung ≤ 100 ms, UI ≤ 500 ms, Anzeige ≤ 500 ms |
-| IT6 | ✅ Bestanden | Timer + Leistungsstufe gleichzeitig korrekt, Reaktionszeiten eingehalten |
+| IT7 | ✅ Bestanden | Timer korrekt einstellbar 1–20 Min, Anzeige ≤ 500 ms |
+| IT8 | ✅ Bestanden | Steuerung ≤ 100 ms, UI ≤ 500 ms, Anzeige ≤ 500 ms |
+| IT9 | ✅ Bestanden | Timer + Leistungsstufe gleichzeitig korrekt, Reaktionszeiten eingehalten |
 
 ---
 
