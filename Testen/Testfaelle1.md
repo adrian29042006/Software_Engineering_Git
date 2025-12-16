@@ -169,4 +169,4 @@
 
 ***
 
-- die Kommentare erklären das geschehen und ergänzen gegebenenfalls die ALlternative, sind aber vorrangig unwichtig, sinnvoll in den weiteren Sprint damit zu arbeiten
+- die Kommentare erklären das geschehen und dienen gegebenenfalls als alternativwerkzeug, sind aber  unwichtig, sich in den weiteren Sprints damit zu befassen.
