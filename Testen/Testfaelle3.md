@@ -9,7 +9,7 @@
 
 ## 🔹 Unit-Tests
 
-**UT7 – Reaktionszeit Steuerung (R1.3)**  
+**UT8 – Reaktionszeit Steuerung (R1.3)**  
 - Ziel: Prüfen, ob die Steuerung auf Eingaben ≤ 100 ms reagiert  
 - Ausgangszustand:
     - Gerät = EIN
@@ -21,7 +21,7 @@
 - Klasse: PowerController
 - Requirement: R1.3
 
-**UT8 – Reaktionszeit UI (R2.3)**  
+**UT9 – Reaktionszeit UI (R2.3)**  
 - Ziel: Prüfen, ob die UI auf Tasteneingaben ≤ 500 ms reagiert  
 - Ausgangszustand:
     - Gerät = EIN
@@ -34,7 +34,7 @@
 - Klasse: UIHandler
 - Requirement: R2.3
 
-**UT9 – Anzeigeverzögerung (R3.2)**  
+**UT10 – Anzeigeverzögerung (R3.2)**  
 - Ziel: Prüfen, ob Anzeigeänderungen innerhalb ≤ 500 ms sichtbar werden  
 - Ausgangszustand:
     - Gerät = EIN
