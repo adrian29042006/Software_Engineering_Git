@@ -1,4 +1,3 @@
-# Sprint 2 – Testkonzept Induktionskochfeld (Temperaturregelung & UI)
 
 ## 1. Ziel der Tests
 Ziel der Tests ist die Verifikation und Validierung der Temperaturmessung, Leistungsstufensteuerung, UI-Funktionen und Sicherheitsabschaltungen unter Berücksichtigung der neuen Anforderungen. Die Tests sollen sicherstellen, dass:
@@ -59,20 +58,3 @@ Ziel der Tests ist die Verifikation und Validierung der Temperaturmessung, Leist
 - Hardwarefehler des Sensors oder Schaltermechanismus (außer Test der spezifizierten Lebensdauer)  
 - Vakuum- und Sealing-Manager  
 
----
-
-## 5. Testfälle
-
-### 5.1 Unit Tests
-| Test-ID | Ziel | Vorgehen | Erwartetes Ergebnis | Requirement |
-|---------|------|----------|-------------------|-------------|
-| UT1 | Temperaturmessung | Sensor liefert simulierte 150 °C | Steuerung liest 150 °C korrekt, UI zeigt 150 °C | R3.1 |
-| UT2 | Leistungsstufensteuerung | Benutzer wählt Stufe 7, Finger verschmutzt | Steuerung regelt Stufe 7, UI zeigt korrekt | R1.1, R1.2, R1.4 |
-| UT3 | Timerfunktion | Timer 10 Minuten starten | Countdown läuft korrekt, Kochzone schaltet nach 10 Min ab | R2.5, R5.3 |
-
-### 5.2 Integration Tests
-| Test-ID | Ziel | Vorgehen | Erwartetes Ergebnis | Requirement |
-|---------|------|----------|-------------------|-------------|
-| IT1 | Temperaturanstieg + Sicherheitsabschaltung | Simuliere 250 °C | Steuerung regelt Leistung, Sicherheitsmodul stoppt Kochzone, UI zeigt Alarm | R3.1, R1.1, R5.3 |
-| IT2 | Taste „P“ mit verschmutzten Fingern | Benutzer drückt „P“ | Timer startet 10 Minuten, Kochzone schaltet korrekt ab | R1.4, R2.5, R5.3 |
-| IT3 | LED-Lebensdauer | LED über 500 h simuliert | Anzeige zeigt korrekt Statusinformationen ohne Fehler | R1.5 |
