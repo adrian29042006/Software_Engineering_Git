@@ -64,23 +64,30 @@ Diese wurden anschließend in der Traceability Matrix nochmal genauer beschriebe
 
 ---
 
-### Schritt 5: Rewies und Retroperspektive
+# Schritt 5: Review und Retrospektive – Sprint 2
 
+## Was lief gut?
+- Alle ausgewählten Kernanforderungen (R1.4, R1.5, R2.4, R2.5, R4.2, R5.3, inkl. Reaktionszeiten und Timerfunktionen) wurden umgesetzt.
+- Die Implementierung der Sicherheitsfunktionen (z.B. automatische Abschaltung, zuverlässiger Timer) hat das System in typischen Nutzungssituationen deutlich vertrauenswürdiger gemacht.
+- Erfahrungen aus Sprint 1 konnten genutzt werden, z.B. bei der Priorisierung der Requirements und der Einteilung von Entwicklungsaufgaben.
+- Teamarbeit und Kommunikation innerhalb des SCRUM-Frameworks funktionierten effizient; tägliche Stand-ups halfen, den Überblick über Fortschritte zu behalten.
 
-Was lief gut?
-- Alle Anforderungen wurden umgesetzt
-- Erfahrungen gegenüber Sprint 1 gesammelt
-- Die Implementierung der Sicherheitsfunktionen (z.B. automatische Abschaltung und zuverlässiger Timer) hat dazu geführt, dass das System in typischen Nutzungssituationen deutlich vertrauenswürdiger wirkt.
-  
-Was nicht gut lief?
-- Zeitplan wurde nicht eingehalten (da ich schon mit Sprint 1 zu spät war)
-- Zeitstress
+## Was lief nicht gut?
+- Der Zeitplan konnte erneut nicht vollständig eingehalten werden, u.a. durch Verzögerungen in Sprint 1.
+- Zeitdruck hat dazu geführt, dass einige Implementierungsdetails unter Stress erledigt werden mussten.
+- Teilweise wurde der Testaufwand für Reaktionszeiten und Timerfunktionen unterschätzt.
 
-Was werde ich im Nächsten Sprint anders machen
-- eignetlich nur das es bald zuende geht und dementsprechend ist die Motivation dar
+## Was werde ich im nächsten Sprint anders machen?
+- Früher mit der Planung starten, um Puffer für Testphasen und unerwartete Verzögerungen einzuplanen.
+- Priorisierung der Aufgaben noch klarer nach kritischen Anforderungen (z.B. Sicherheitsfunktionen) vornehmen.
+- Motivation hochhalten, da das Projekt sich dem Ende nähert; regelmäßige kurze Feedback-Schleifen einplanen, um kleine Erfolge sichtbar zu machen.
 
-Lessons Learned:
-- Erfahrungen in SCRUM
+## Lessons Learned
+- SCRUM hilft, den Entwicklungsfortschritt transparent zu halten, aber Zeitplanung und realistische Schätzungen sind entscheidend für die Einhaltung von Sprints.
+- Sicherheits- und Zeitfunktionen sollten frühzeitig in die Architektur eingebunden werden, um spätere Nacharbeiten zu vermeiden.
+- Dokumentation und klare Zuordnung von Requirements zu Komponenten erleichtern sowohl die Implementierung als auch spätere Reviews.
+- Kontinuierliches Testen der Reaktionszeiten und Timerfunktionen ist essentiell, um die Systemzuverlässigkeit zu gewährleisten.
+
 
   
 
