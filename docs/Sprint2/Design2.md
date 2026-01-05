@@ -3,12 +3,14 @@
 
 Umfang:
 
-- Temperaturmessung mit Sensorik (R3.1)  
-- Grundsteuerung der Leistungsstufen (R1.1, R1.2)  
-- UI-Basisfunktion: Eingabe über Tasten/Drehknopf/Touch  
-- Reaktionszeit der UI (R1.3, R2.3)  
-- Sichtbare Statusanzeige (R2.2)  
+- Temperaturmessung mit Sensorik (R3.1)
+- Grundsteuerung der Leistungsstufen (R1.1, R1.2)
+- UI-Basisfunktionen: Eingabe über Tasten, Drehknopf oder Touch (R1.2)
+- Reaktionszeit der Benutzeroberfläche (R2.3)
+- Sichtbare Status- und Zustandsanzeige (R2.2)
 - Ein-/Ausschaltung des Kochfelds (R4.1)
+- Timerfunktion mit automatischer Abschaltung der Kochzone (R5.3)
+- Taste "P" (R.2.1, R2.4)
   
 
 ---
