@@ -23,8 +23,9 @@ Umfang:
 
 ## Zustandsdiagramm Knopfinteraktion
 
+<img width="1920" height="1080" alt="EINAus-Schalter (2)" src="https://github.com/user-attachments/assets/6dd187f7-bd03-4391-bd5a-310d0bca3f50" />
 
-<img width="1920" height="1080" alt="EINAus-Schalter (1)" src="https://github.com/user-attachments/assets/12a1ecca-b7c3-4f6a-9e83-3d12051fd625" />
+
 
 
 ---
