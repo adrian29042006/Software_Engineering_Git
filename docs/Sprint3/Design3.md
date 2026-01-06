@@ -32,8 +32,9 @@ Umfang:
 ## Sequenzdiagramm
 
 
-<img width="1920" height="1080" alt="Benutzer (1)" src="https://github.com/user-attachments/assets/1be04493-981c-49b9-b585-15f4b5358bcf" />
+maximal 500ms Verzögerung
 
+<img width="1920" height="1080" alt="Benutzer (5)" src="https://github.com/user-attachments/assets/2a6d3436-9906-4e35-a6c0-aae7019a2ac3" />
 
 ---
 
