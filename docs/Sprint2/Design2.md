@@ -1,16 +1,14 @@
 
 ---
 
-Umfang:
-
-- Temperaturmessung mit Sensorik (R3.1)
-- Grundsteuerung der Leistungsstufen (R1.1, R1.2)
-- UI-Basisfunktionen: Eingabe über Tasten, Drehknopf oder Touch (R1.2)
-- Reaktionszeit der Benutzeroberfläche (R2.3)
-- Sichtbare Status- und Zustandsanzeige (R2.2)
-- Ein-/Ausschaltung des Kochfelds (R4.1)
-- Timerfunktion mit automatischer Abschaltung der Kochzone (R5.3)
-- Taste "P" (R.2.1, R2.4)
+Umfang Sprint 3
+Temperaturmessung mit Sensorik inkl. Anzeige (R3.1, R3.2)
+Grundsteuerung der Leistungsstufen mit Reaktionszeit ≤ 100 ms (R1.1–R1.3)
+UI-Basisfunktionen (Tasten, Drehknopf, Touch) mit max. 500 ms Reaktionszeit (R1.2, R2.3)
+Status- und Zustandsanzeige (R2.2)
+Ein-/Ausschaltung des Kochfelds (R4.1)
+Timerfunktion (1–20 min) inkl. Anzeige, Reaktion ≤ 500 ms und automatischer Abschaltung (R5.1–R5.3)
+Taste „P“ (R2.1, R2.4)
   
 
 ---
