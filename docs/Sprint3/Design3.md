@@ -9,8 +9,9 @@ Umfang:
 - Reaktionszeit der UI (R1.3, R2.3)  
 - Sichtbare Statusanzeige (R2.2)  
 - Ein-/Ausschaltung des Kochfelds (R4.1)
-  
-
+- Anzeige- und Timerfunktionen mit max. 500 ms Verzögerung (R3.2, R5.2)  
+- Einstellbare Kochzeit 1–20 Minuten (R5.1)  
+- UI-Reaktionszeit ≤ 100 ms, schnelle Tastenreaktion ≤ 500 ms (R1.3, R2.3)
 ---
 
 ## Klassendiagramm
