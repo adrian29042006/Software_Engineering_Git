@@ -16,7 +16,7 @@ Umfang:
 
 ## Klassendiagramm
 
-<img width="1920" height="1080" alt="press" src="https://github.com/user-attachments/assets/b1a5d5ff-f03f-4c97-82dc-3ba2704faf3f" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/cf2efd2d-aa52-4678-85d4-c6315f6b513a" />
 
 
 ---
