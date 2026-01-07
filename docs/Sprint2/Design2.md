@@ -21,7 +21,7 @@ old Version
 <img width="1920" height="1080" alt="press" src="https://github.com/user-attachments/assets/b1a5d5ff-f03f-4c97-82dc-3ba2704faf3f" />
 
 new Version
-
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/27f5d405-7802-41d0-bd11-c9327e3db969" />
 
 
 ---
