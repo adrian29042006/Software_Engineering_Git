@@ -16,8 +16,12 @@ Umfang Sprint 2:
 ---
 
 ## Klassendiagramm
+old Version
 
 <img width="1920" height="1080" alt="press" src="https://github.com/user-attachments/assets/b1a5d5ff-f03f-4c97-82dc-3ba2704faf3f" />
+
+new Version
+
 
 
 ---
