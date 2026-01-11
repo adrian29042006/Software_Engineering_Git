@@ -56,5 +56,23 @@ Ziel der Tests ist die Verifikation und Validierung der Temperaturmessung, Leist
 **Out-of-Scope:**  
 - Langzeitverhalten der Heizelemente (außer LED-Belastung)  
 - Hardwarefehler des Sensors oder Schaltermechanismus (außer Test der spezifizierten Lebensdauer)  
-- Vakuum- und Sealing-Manager  
+- Vakuum- und Sealing-Manager
+
+ ## 5. Nachweis der abgeschlossenen Testfälle für Sprint 1
+
+Alle im Sprint 1 definierten Testfälle wurden erfolgreich durchgeführt und abgeschlossen. Die Ergebnisse stimmen mit den geplanten Anforderungen überein.
+
+| Testfall | Abgeschlossen | Bemerkung |
+|----------|---------------|-----------|
+| UT1 – Leistungsstufen: Untergrenze | ✅ | Leistungsstufe fiel nicht unter 1, System stabil |
+| UT2 – Reaktionszeit UI-Eingabe | ✅ | UI reagierte innerhalb ≤ 100 ms, Leistungsstufe korrekt angepasst |
+| UT3 – Temperaturmessung: stabiler Wert | ✅ | Sensorwerte konstant, keine Ausreißer |
+| IT1 – UI-Eingabe steuert Heizleistung | ✅ | Eingabe korrekt verarbeitet, Heizleistung angepasst, Anzeige synchron |
+| IT2 – Ein-/Ausschaltung des Systems | ✅ | System lässt sich zuverlässig ein- und ausschalten |
+| IT3 – Temperaturregelung mit Anzeige | ✅ | Heizleistung regelkonform angepasst, System stabil |
+
+**Fazit:**  
+- Alle Testfälle von Sprint 1 wurden erfolgreich abgeschlossen.  
+- Die Requirements R1.1, R1.2, R1.3, R2.2, R3.1 und R4.1 sind nachweislich erfüllt.  
+- Keine offenen Fehler oder Blocker vorhanden.  
 
