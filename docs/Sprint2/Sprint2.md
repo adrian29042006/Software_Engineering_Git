@@ -64,30 +64,38 @@ Diese wurden anschließend in der Traceability Matrix nochmal genauer beschriebe
 
 ---
 
-# Schritt 5: Review und Retrospektive – Sprint 2
+# Retrospektive Sprint 2 – Induktionskochfeld
 
 ## Was lief gut?
 - Alle ausgewählten Kernanforderungen (R1.4, R1.5, R2.4, R2.5, R4.2, R5.3, inkl. Reaktionszeiten und Timerfunktionen) wurden umgesetzt.
 - Die Implementierung der Sicherheitsfunktionen (z.B. automatische Abschaltung, zuverlässiger Timer) hat das System in typischen Nutzungssituationen deutlich vertrauenswürdiger gemacht.
 - Erfahrungen aus Sprint 1 konnten genutzt werden, z.B. bei der Priorisierung der Requirements und der Einteilung von Entwicklungsaufgaben.
 - Teamarbeit und Kommunikation innerhalb des SCRUM-Frameworks funktionierten effizient; tägliche Stand-ups halfen, den Überblick über Fortschritte zu behalten.
+- **Modulare Architektur** erleichterte die Integration neuer Module (Timer-/Einstellungsmodul, Echtzeit-/Interrupt-Modul) ohne Beeinträchtigung bestehender Kernfunktionen.
+- **Kontinuierliche Tests** während der Implementierung (Unit- und Integrationstests) stellten sicher, dass Reaktionszeiten und Timerfunktionen den Spezifikationen entsprechen.
+- **Dokumentation und Nachvollziehbarkeit:** vollständige und gut strukturierte Dokumentation erleichterte Reviews und spätere Anpassungen.
 
 ## Was lief nicht gut?
 - Der Zeitplan konnte erneut nicht vollständig eingehalten werden, u.a. durch Verzögerungen in Sprint 1.
 - Zeitdruck hat dazu geführt, dass einige Implementierungsdetails unter Stress erledigt werden mussten.
 - Teilweise wurde der Testaufwand für Reaktionszeiten und Timerfunktionen unterschätzt.
+- Abstimmung zwischen Steuerung, Timer und Anzeige war zeitweise unsicher, insbesondere bei parallelen Eingaben.
+- Designpatterns wurden noch nicht vollständig umgesetzt, was Lesbarkeit und Wiederverwendbarkeit des Codes einschränkte.
 
 ## Was werde ich im nächsten Sprint anders machen?
 - Früher mit der Planung starten, um Puffer für Testphasen und unerwartete Verzögerungen einzuplanen.
 - Priorisierung der Aufgaben noch klarer nach kritischen Anforderungen (z.B. Sicherheitsfunktionen) vornehmen.
-- Motivation hochhalten, da das Projekt sich dem Ende nähert; regelmäßige kurze Feedback-Schleifen einplanen, um kleine Erfolge sichtbar zu machen.
+- Testfälle für Grenzbedingungen (z. B. schnelle Eingaben, parallele Operationen) systematischer vorbereiten.
+- Designpatterns aus Sprint 1 und 2 vollständig implementieren, um Codequalität und Wiederverwendbarkeit zu verbessern.
+- Motivation hochhalten; regelmäßige kurze Feedback-Schleifen einplanen, um kleine Erfolge sichtbar zu machen.
+- Frühzeitige Integration von Sicherheits- und Zeitfunktionen in die Architektur, um spätere Nacharbeiten zu vermeiden.
 
 ## Lessons Learned
 - SCRUM hilft, den Entwicklungsfortschritt transparent zu halten, aber Zeitplanung und realistische Schätzungen sind entscheidend für die Einhaltung von Sprints.
 - Sicherheits- und Zeitfunktionen sollten frühzeitig in die Architektur eingebunden werden, um spätere Nacharbeiten zu vermeiden.
 - Dokumentation und klare Zuordnung von Requirements zu Komponenten erleichtern sowohl die Implementierung als auch spätere Reviews.
 - Kontinuierliches Testen der Reaktionszeiten und Timerfunktionen ist essentiell, um die Systemzuverlässigkeit zu gewährleisten.
+- Modulare Architektur und dedizierte Module (z.B. Echtzeit-/Interrupt- und Timer-/Einstellungsmodul) erleichtern zukünftige Erweiterungen und Wartbarkeit.
+- Frühzeitige Planung und regelmäßige Reviews reduzieren Risiken durch Zeitdruck und unvorhergesehene Abhängigkeiten.
 
-
-  
 
