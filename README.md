@@ -27,7 +27,7 @@ Ziel ist es, Anforderungen (Lastenheft) und technische Umsetzung (Pflichtenheft)
 ---
 
 # Lauffähigen Versionen zu den Einzelnen Sprints
--[# Sprint 1 Version](Versionenlauffähig/Sprint1-code.py)
+# [Sprint 1 Version](Versionenlauffähig/Sprint1-code.py)
 # Sprint 2 Version: in Bearbeitung
 # Sprint 3 Version: in Bearbeitung
 
