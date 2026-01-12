@@ -54,4 +54,45 @@ Ziel der Tests ist die Verifikation und Validierung der Benutzerinteraktion, Rea
 - Langzeitverhalten der LEDs oder Schaltermechanismen  
 - Vakuum- und Sealing-Manager  
 
+ ## 5. Nachweis der abgeschlossenen Testfälle für Sprint 1
+
+Alle im Sprint 1 definierten Testfälle wurden erfolgreich durchgeführt und abgeschlossen. Die Ergebnisse stimmen mit den geplanten Anforderungen überein.
+
+| Testfall | Abgeschlossen | Bemerkung |
+|----------|---------------|-----------|
+| UT1 – Leistungsstufen: Untergrenze | ✅ | Leistungsstufe fiel nicht unter 1, System stabil |
+| UT2 – Reaktionszeit UI-Eingabe | ✅ | UI reagierte innerhalb ≤ 100 ms, Leistungsstufe korrekt angepasst |
+| UT3 – Temperaturmessung: stabiler Wert | ✅ | Sensorwerte konstant, keine Ausreißer |
+| IT1 – UI-Eingabe steuert Heizleistung | ✅ | Eingabe korrekt verarbeitet, Heizleistung angepasst, Anzeige synchron |
+| IT2 – Ein-/Ausschaltung des Systems | ✅ | System lässt sich zuverlässig ein- und ausschalten |
+| IT3 – Temperaturregelung mit Anzeige | ✅ | Heizleistung regelkonform angepasst, System stabil |
+
+**Fazit:**  
+- Alle Testfälle von Sprint 1 wurden erfolgreich abgeschlossen.  
+- Die Requirements R1.1, R1.2, R1.3, R2.2, R3.1 und R4.1 sind nachweislich erfüllt.  
+- Keine offenen Fehler oder Blocker vorhanden.  
+
+[zu den Test](../../Testen)
+
+
+## 6. Nachweis der abgeschlossenen Testfälle für Sprint 2
+
+Alle im Sprint 2 definierten Testfälle wurden erfolgreich durchgeführt und abgeschlossen. Die Ergebnisse stimmen mit den geplanten Anforderungen überein.
+
+| Testfall | Abgeschlossen | Bemerkung |
+|----------|---------------|-----------|
+| UT4 – UI-Reaktion bei verschmutzten Fingern | ✅ | Eingaben zuverlässig erkannt, Leistungsstufe korrekt angepasst |
+| UT5 – Lebensdauer LED-Anzeige | ✅ | LED-Anzeige blieb ≥ 500 h stabil, keine Helligkeitsminderung |
+| UT6 – Timer mit Selbstabschaltung | ✅ | Kochzone nach 10 Minuten zuverlässig deaktiviert, Display korrekt |
+| UT7 – Schalterhaltbarkeit | ✅ | Ein-/Ausschalter überstand 100.000 Betätigungen ohne Defekt |
+| IT4 – UI + verschmutzte Finger steuert Heizleistung | ✅ | Leistungsstufe korrekt erhöht, Display synchron |
+| IT5 – Timerfunktion + Selbstabschaltung | ✅ | Timer und Boost-Funktion korrekt deaktiviert, Display zeigt Status |
+| IT6 – Ein-/Ausschaltung inkl. Schalterhaltbarkeit | ✅ | Schalter funktionierte zuverlässig, Gerät schaltet ein/aus |
+
+**Fazit:**  
+- Alle Testfälle von Sprint 2 wurden erfolgreich abgeschlossen.  
+- Die Requirements R1.4, R1.5, R2.5, R4.2 und R5.3 sind nachweislich erfüllt.  
+- Keine offenen Fehler oder Blocker vorhanden.  
+
+[zu den Test](../../Testen)
 
