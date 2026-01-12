@@ -25,6 +25,13 @@ Ziel ist es, Anforderungen (Lastenheft) und technische Umsetzung (Pflichtenheft)
 -[Requierements](docs/Requierements.md)
 
 ---
+
+# Lauffähigen Versionen zu den Einzelnen Sprints
+-[# Sprint 1 Version](Versionenlauffähig/Sprint1-code.py)
+# Sprint 2 Version: in Bearbeitung
+# Sprint 3 Version: in Bearbeitung
+
+---
 ## Erklärung:
 
 <img width="1600" height="506" alt="image" src="https://github.com/user-attachments/assets/fef6812a-4261-4c59-8d15-223d12d9bfab" />
