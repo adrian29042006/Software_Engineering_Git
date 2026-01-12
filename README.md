@@ -24,3 +24,14 @@ Ziel ist es, Anforderungen (Lastenheft) und technische Umsetzung (Pflichtenheft)
 
 -[Requierements](docs/Requierements.md)
 
+---
+## Erklärung:
+
+Ich versichere, dass ich die Projektarbeit ohne Hilfe Dritter und ohne Benutzung anderer als der
+angegebenen Quellen und Hilfsmittel angefertigt habe. Die den benutzten Quellen wörtlich oder
+inhaltlich entnommenen Inhalte sind als solche kenntlich gemacht. Ich erteile hiermit der TH
+Deggendorf das Recht, die von mir erstellte Software für hochschulinterne Zwecke verwenden
+zu dürfen.
+
+- Ort, Datum: 12.01.25
+- Unterschrift:<img width="1600" height="1060" alt="image" src="https://github.com/user-attachments/assets/5d307dc2-d5e0-4f3c-8e86-ae546e157232" />
