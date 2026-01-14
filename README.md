@@ -27,8 +27,10 @@ Ziel ist es, Anforderungen (Lastenheft) und technische Umsetzung (Pflichtenheft)
 ---
 
 # Lauffähigen Versionen zu den Einzelnen Sprints
+
+Bitte führen Sie diesen Code ausschließlich in Visual Studio Code aus. Der Code wurde bisher nur in Visual Studio Code getestet, insbesondere das Debugging. In anderen Entwicklungsumgebungen kann es zu Fehlern kommen oder der Code funktioniert möglicherweise gar nicht.
+Für die grafische Benutzeroberfläche wurde Tkinter in Python verwendet.
 ## [Sprint 1 Version](Versionenlauffähig/Sprint1_code.py)
-Bitte binden Sie diesen Code ausschließlich in Visual Studio Code ein. Es wurde bisher nur das Debuggen in Visual Studio Code getestet. Anderswo kann es zu Fehlern führen oder garnicht funktionieren. 
 ## [Sprint 2 Version](Versionenlauffähig/Sprint2_code.py)
 ## [Sprint 3 Version](Versionenlauffähig/Sprint3_code.py)
 
